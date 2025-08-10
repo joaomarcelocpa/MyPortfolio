@@ -15,6 +15,10 @@ import { Toaster } from "@/components/ui/toaster"
 import { useToast } from "@/hooks/use-toast"
 import { Github, Linkedin, Mail, ExternalLink, FileText, PlayCircle, Rocket, Sparkles } from "lucide-react"
 import { motion, useScroll, useSpring } from "framer-motion"
+import pucMinasLogo from '../public/logo-pucminas.png'
+import m2cDigitalLogo from '../public/logo-m2cdigital.png'
+import galaxiaBackground from '../public/galaxia.jpg'
+import profilePhoto from '../public/foto-perfil.jpg'
 
 // Components
 import Navbar from "@/components/navbar"
@@ -178,7 +182,7 @@ export default function Page() {
         <main className="relative min-h-screen text-white antialiased overflow-x-hidden">
             {/* Background: galaxy image + gradient + stars canvas */}
             <div className="fixed inset-0 -z-20">
-                <Image src="/images/galaxy.jpg" alt="Fundo de galáxia" fill priority className="object-cover" />
+                <Image src={galaxiaBackground} alt="Fundo de galáxia" fill priority className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#1a0b2e]/70 to-black/90" />
             </div>
             <StarsCanvas />
@@ -211,12 +215,12 @@ export default function Page() {
                                 <Sparkles className="mr-2 h-3.5 w-3.5" />
                                 Olá, eu sou
                             </Badge>
-                            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
+                            <h1 className="text-5xl font-extrabold tracking-tight sm:text-5xl">
                                 João Marcelo Carvalho Pereira Araújo
                             </h1>
                             <p className="text-base leading-relaxed text-white/80">
-                                Estudante de Engenharia de Software na PUC Minas e desenvolvedor na M2C Digital. Apaixonado por
-                                experiências digitais fluidas, performance e boas práticas de engenharia.
+                                Estudante de Engenharia de Software na PUC Minas e desenvolver full-stack na M2C Digital. Apaixonado por
+                                programação, otimização e design de aplicações web modernas. Buscando sempre aprender e compartilhar conhecimento.
                             </p>
                             <div className="flex flex-wrap items-center gap-3">
                                 <Button
@@ -247,37 +251,19 @@ export default function Page() {
                             </div>
                             <div className="mt-4 flex items-center gap-6">
                                 <div className="flex items-center gap-2">
-                                    <Image
-                                        src="/public/puc-minas.png"
-                                        alt="PUC Minas"
-                                        width={36}
-                                        height={36}
-                                        className="rounded-sm object-contain"
-                                    />
-                                    <span className="text-sm text-white/80">PUC Minas • Eng. Software</span>
+                                    <Image src={pucMinasLogo} alt="PUC Minas" width={36} height={36} className="..." />
+                                    <span className="text-sm text-white/80">PUC Minas  ㅤㅤㅤㅤㅤㅤEngenharia de Software</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <Image
-                                        src="/public/m2c-digital.png"
-                                        alt="M2C Digital"
-                                        width={36}
-                                        height={36}
-                                        className="rounded-sm object-contain"
-                                    />
-                                    <span className="text-sm text-white/80">M2C Digital • Dev</span>
+                                    <Image src={m2cDigitalLogo} alt="M2C Digital" width={36} height={36} className="..." />
+                                    <span className="text-sm text-white/80">M2C Digital ㅤㅤㅤㅤㅤ Desenvolvedor FullStack</span>
                                 </div>
                             </div>
                         </div>
                         <div className="relative mx-auto h-52 w-52 sm:h-64 sm:w-64">
                             <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-violet-600/40 to-fuchsia-500/30 blur-2xl" />
                             <div className="relative rounded-2xl border border-white/10 bg-black/30 p-1 backdrop-blur">
-                                <Image
-                                    src="/placeholder.svg?height=640&width=640"
-                                    alt="Foto de perfil de João"
-                                    width={640}
-                                    height={640}
-                                    className="h-52 w-52 sm:h-64 sm:w-64 rounded-xl object-cover"
-                                />
+                                <Image src={profilePhoto} alt="M2C Digital" width={640} height={640} className="..." />
                             </div>
                         </div>
                     </div>
@@ -436,11 +422,11 @@ export default function Page() {
                 <Separator className="mb-6 bg-white/10" />
                 <div className="flex flex-col items-center gap-2 text-center text-sm text-white/60">
                     <div className="flex items-center gap-2">
-                        <Image src="/images/m2c-digital.png" alt="M2C Digital" width={24} height={24} />
+                        <Image src={m2cDigitalLogo} alt="M2C Digital" width={36} height={36} className="..." />
                         <span>Desenvolvedor na M2C Digital</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <Image src="/images/puc-minas.png" alt="PUC Minas" width={24} height={24} />
+                        <Image src={pucMinasLogo} alt="PUC Minas" width={36} height={36} className="..." />
                         <span>Estudante de Eng. Software • PUC Minas</span>
                     </div>
                     <span>© {new Date().getFullYear()} João Marcelo • Todos os direitos reservados.</span>
