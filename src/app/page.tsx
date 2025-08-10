@@ -3,6 +3,7 @@
 import type React from "react"
 
 import Image from "next/image"
+import type { StaticImageData } from "next/image"
 import { useEffect, useMemo, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -19,8 +20,11 @@ import pucMinasLogo from '../public/logo-pucminas.png'
 import m2cDigitalLogo from '../public/logo-m2cdigital.png'
 import galaxiaBackground from '../public/galaxia.jpg'
 import profilePhoto from '../public/foto-perfil.jpg'
+import logoEasyTraining from '../public/logo-easytraining.jpeg'
+import logoGnosi from "../public/logo-gnosi.png"
+import logoFabianaMoveis from "../public/logo-fabiana-moveis.png"
 
-// Components
+
 import Navbar from "@/components/navbar"
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
@@ -32,7 +36,7 @@ type Project = {
     title: string
     description: string
     tags: string[]
-    image: string
+    image: string | StaticImageData
     link?: string
     details: string
 }
@@ -54,45 +58,45 @@ type Article = {
 const projects: Project[] = [
     {
         id: "proj-1",
-        title: "Dashboard Analytics",
-        description: "Plataforma de visualização de métricas em tempo real.",
-        tags: ["Next.js", "TypeScript", "Tailwind", "Recharts"],
-        image: "/placeholder.svg?height=640&width=1120",
-        link: "https://example.com",
+        title: "Fabiana Móveis",
+        description: "Sistema de Gerenciamento de rotas de entrega com integração Google Maps API.",
+        tags: ["Next.js", "Nest.js", "Google Maps API", "PostgreSQL", "Amazon AWS"],
+        image: logoFabianaMoveis,
         details:
-            "Projeto completo de analytics com autenticação, cache e gráficos interativos. Foco em performance (RSC) e UX.",
+            "Sistema completo de gerenciamento de rotas de entrega desenvolvido para a empresa Fabiana Móveis e Eletro. O sistema conta com geração automática de rotas de entrega otimizadas através da API do Google Maps, melhorando a eficiência logística da empresa.",
     },
     {
         id: "proj-2",
-        title: "E-commerce Headless",
-        description: "Loja headless com carrinho, checkout e CMS.",
-        tags: ["Next.js", "Stripe", "PostgreSQL", "Shadcn UI"],
-        image: "/placeholder.svg?height=640&width=1120",
-        details: "Integração com Stripe para pagamentos, Painel administrativo, catálogo dinâmico e busca facetada.",
+        title: "Gnosi",
+        description: "Plataforma de cursos voltada para compartilhamento de conteúdos de tecnologia.",
+        tags: ["React.js", "Java Spring Boot", "PostgreSQL", "Microsoft Azure"],
+        image: logoGnosi,
+        details: "Plataforma educacional completa para cursos de tecnologia, organizada em módulos e aulas. Sistema robusto desenvolvido com React.js no frontend e Java Spring Boot no backend, proporcionando uma experiência de aprendizado estruturada e intuitiva.",
     },
     {
         id: "proj-3",
-        title: "AI Content Studio",
-        description: "Ferramentas de IA para geração de conteúdo.",
-        tags: ["AI SDK", "OpenAI-compatible", "RAG"],
-        image: "/placeholder.svg?height=640&width=1120",
+        title: "Easy Training",
+        description: "Sistema de geração de fichas de treino personalizadas e gratuitas.",
+        tags: ["HTML", "CSS", "JavaScript", "JSON"],
+        image: logoEasyTraining,
+        link: "https://easy-training-diogobrunoros-projects.vercel.app/",
         details:
-            "Workspace para geração/edição de textos e imagens, histórico e organização por projetos, prompts reutilizáveis.",
+            "Aplicação web que promove fichas de academia gratuitas e personalizadas. Desenvolvida com tecnologias web fundamentais (HTML, CSS e JavaScript), oferece uma interface intuitiva para criação de treinos personalizados de acordo com as necessidades de cada usuário.",
     },
 ]
 
 const videos: Video[] = [
     {
         id: "vid-1",
-        title: "Como estruturei meu portfólio",
-        youtubeId: "dQw4w9WgXcQ",
-        description: "Tour técnico pelas decisões de arquitetura do portfólio.",
+        title: "Vídeo de apresentação - Fabiana Móveis",
+        youtubeId: "4R1hQCg9AQ8",
+        description: "Vídeo de Apresentação do projeto Fabiana Móveis, mostrando as funcionalidades principais da aplicação desenvolvida para otimizar as rotas de entrega da empresa.",
     },
     {
         id: "vid-2",
-        title: "Boas práticas com Next.js",
-        youtubeId: "zG7s4H5T9j8",
-        description: "Melhores práticas e dicas para projetos modernos.",
+        title: "Vídeo de apresentação - Gnosi",
+        youtubeId: "dG2RQ9XAAqE",
+        description: "Vídeo de Apresentação do projeto Gnosi, mostrando as principais funcionalidades do software que simula uma plataforma de cursos online.",
     },
 ]
 
@@ -238,12 +242,12 @@ export default function Page() {
                                 </Button>
                                 <div className="flex gap-2">
                                     <Button variant="ghost" size="icon" className="hover:bg-white/10" asChild>
-                                        <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                                        <a href="https://github.com/joaomarcelocpa/" target="_blank" rel="noreferrer" aria-label="GitHub">
                                             <Github className="h-5 w-5" />
                                         </a>
                                     </Button>
                                     <Button variant="ghost" size="icon" className="hover:bg-white/10" asChild>
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                                        <a href="https://www.linkedin.com/in/joaomarcelocpa/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                                             <Linkedin className="h-5 w-5" />
                                         </a>
                                     </Button>
@@ -263,7 +267,7 @@ export default function Page() {
                         <div className="relative mx-auto h-52 w-52 sm:h-64 sm:w-64">
                             <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-violet-600/40 to-fuchsia-500/30 blur-2xl" />
                             <div className="relative rounded-2xl border border-white/10 bg-black/30 p-1 backdrop-blur">
-                                <Image src={profilePhoto} alt="M2C Digital" width={640} height={640} className="..." />
+                                <Image src={profilePhoto} alt="João Marcelo" width={640} height={640} className="rounded-xl" />
                             </div>
                         </div>
                     </div>

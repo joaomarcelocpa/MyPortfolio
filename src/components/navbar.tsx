@@ -1,11 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import React, { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import profilePhotoSmall from "@/public/foto-perfil-pequena.jpeg";
 
 type SectionLink = { id: string; label: string }
 
@@ -25,7 +26,7 @@ export default function Navbar({
             <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
                 <div className="flex items-center gap-3">
                     <div className="relative h-9 w-9 overflow-hidden rounded-md border border-white/10 bg-black/50 backdrop-blur">
-                        <Image src="/images/m2c-digital.png" alt="Logo" fill className="object-contain p-1" />
+                        <Image src={profilePhotoSmall} alt="PUC Minas" width={36} height={36} className="..." />
                     </div>
                     <div className="leading-tight">
                         <div className="font-semibold text-white">João Marcelo</div>
