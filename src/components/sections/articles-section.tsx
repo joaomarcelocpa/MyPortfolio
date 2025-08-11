@@ -12,16 +12,10 @@ type Article = {
 const articles: Article[] = [
     {
         id: "art-1",
-        title: "Clean Architecture aplicada ao Front-end",
-        description: "Princípios e exemplos práticos.",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    },
-    {
-        id: "art-2",
-        title: "Otimizando performance em aplicações React",
-        description: "Estratégias de memoização e suspense.",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    },
+        title: "Análise da Precisão de IAs Generativas na Resolução de Equações Matemáticas",
+        description: "Este trabalho investiga o desempenho de sistemas de inteligência artificial generativa na resolução de equações matemáticas complexas, com foco em integrais de diferentes níveis de dificuldade.",
+        pdfUrl: "/artigo.pdf",
+    }
 ]
 
 interface ArticlesSectionProps {
@@ -32,13 +26,15 @@ export default function ArticlesSection({ sectionRef }: ArticlesSectionProps) {
     return (
         <Section id="artigos" ref={sectionRef}>
             <Reveal>
-                <header className="mb-6">
-                    <h2 className="text-3xl font-bold">Artigos</h2>
-                    <p className="text-white/70">Leituras que escrevi — abrem em modal (PDF).</p>
+                <header className="mb-8">
+                    <h2 className="text-3xl font-bold text-white mb-2">Artigos</h2>
+                    <p className="text-white/70 text-lg">
+                        Artigos técnicos que escrevi sobre desenvolvimento, arquitetura e boas práticas.
+                    </p>
                 </header>
-                <div className="grid gap-6 md:grid-cols-2">
-                    {articles.map((a) => (
-                        <ArticleCard key={a.id} article={a} />
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {articles.map((article) => (
+                        <ArticleCard key={article.id} article={article} />
                     ))}
                 </div>
             </Reveal>

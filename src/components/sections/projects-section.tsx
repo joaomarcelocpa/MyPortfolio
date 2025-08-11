@@ -57,10 +57,11 @@ const projects: Project[] = [
     },
     {
         id: "proj-5",
-        title: "Xulambs Park",
+        title: "Java Parking",
         description: "Sistema de gestão de parques de estacionamento e cobrança.",
         tags: ["Java", "Java FX ", "PostgreSQL", "Microsoft Azure"],
         image: logoXulambs,
+        link: "https://github.com/joaomarcelocpa/JavaParking",
         details:
             "Aplicação web que promove fichas de academia gratuitas e personalizadas. Desenvolvida com tecnologias web fundamentais (HTML, CSS e JavaScript), oferece uma interface intuitiva para criação de treinos personalizados de acordo com as necessidades de cada usuário.",
     },
