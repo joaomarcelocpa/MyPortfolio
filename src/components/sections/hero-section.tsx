@@ -2,9 +2,9 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, Rocket, Sparkles } from "lucide-react"
-import pucMinasLogo from '../../public/logo-pucminas.png'
-import m2cDigitalLogo from '../../public/logo-m2cdigital.png'
-import profilePhoto from '../../public/foto-perfil.jpg'
+import pucMinasLogo from '../../../public/logo-pucminas.png'
+import m2cDigitalLogo from '../../../public/logo-m2cdigital.png'
+import profilePhoto from '../../../public/foto-perfil.JPG'
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
 

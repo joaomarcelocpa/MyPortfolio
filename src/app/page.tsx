@@ -10,13 +10,13 @@ import galaxiaBackground from '../../public/galaxia.jpg'
 import Navbar from "@/components/navbar"
 import StarsCanvas from "@/components/stars-canvas"
 import BackToTop from "@/components/back-to-top"
-import HeroSection from "@/components/hero-section"
-import ProjectsSection from "@/components/projects-section"
-import VideosSection from "@/components/videos-section"
-import ArticlesSection from "@/components/articles-section"
-import ExperienceSection from "@/components/experience-section"
-import ContactSection from "@/components/contact-section"
-import FooterSection from "@/components/footer-section"
+import HeroSection from "@/components/sections/hero-section"
+import ProjectsSection from "@/components/sections/projects-section"
+import VideosSection from "@/components/sections/videos-section"
+import ArticlesSection from "@/components/sections/articles-section"
+import ExperienceSection from "@/components/sections/experience-section"
+import ContactSection from "@/components/sections/contact-section"
+import FooterSection from "@/components/sections/footer-section"
 
 const sections = [
     { id: "sobre", label: "Sobre" },

@@ -1,11 +1,11 @@
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
-import ProjectCard from "./project-card"
-import logoEasyTraining from '../../public/logo-easytraining.jpeg'
-import logoGnosi from "../../public/logo-gnosi.png"
-import logoFabianaMoveis from "../../public/logo-fabiana-moveis.png"
-import logoM2CPainel from "../../public/logo-m2c.png"
-import logoXulambs from "../../public/logo-xulambspark.jpeg"
+import ProjectCard from "../cards/project-card"
+import logoEasyTraining from '../../../public/logo-easytraining.jpeg'
+import logoGnosi from "../../../public/logo-gnosi.png"
+import logoFabianaMoveis from "../../../public/logo-fabiana-moveis.png"
+import logoM2CPainel from "../../../public/logo-m2c.png"
+import logoXulambs from "../../../public/logo-xulambspark.jpeg"
 import type { StaticImageData } from "next/image"
 
 type Project = {

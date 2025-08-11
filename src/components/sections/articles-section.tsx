@@ -1,6 +1,6 @@
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
-import ArticleCard from "./article-card"
+import ArticleCard from "../cards/article-card"
 
 type Article = {
     id: string

@@ -1,6 +1,6 @@
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
-import VideoCard from "./video-card"
+import VideoCard from "../cards/video-card"
 
 type Video = {
     id: string

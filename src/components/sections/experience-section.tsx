@@ -1,6 +1,6 @@
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
-import SkillCard from "./skill-card"
+import SkillCard from "../cards/skill-card"
 
 const skills = [
     { name: "TypeScript", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
