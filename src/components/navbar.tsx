@@ -6,7 +6,7 @@ import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger 
 import { Menu } from "lucide-react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
-import profilePhotoSmall from "@/public/foto-perfil-pequena.jpeg";
+import profilePhotoSmall from "../../public/foto-perfil-pequena.jpeg";
 
 type SectionLink = { id: string; label: string }
 

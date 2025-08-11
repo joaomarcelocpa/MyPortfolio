@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useEffect, useMemo, useState } from "react"
 import { Toaster } from "@/components/ui/toaster"
 import { motion, useScroll, useSpring } from "framer-motion"
-import galaxiaBackground from '../public/galaxia.jpg'
+import galaxiaBackground from '../../public/galaxia.jpg'
 
 import Navbar from "@/components/navbar"
 import StarsCanvas from "@/components/stars-canvas"
@@ -37,7 +37,6 @@ export default function Page() {
         [],
     ) as Record<string, { id: string; ref: { current: HTMLElement | null } }>
 
-    // Scroll spy
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -55,7 +54,6 @@ export default function Page() {
         return () => observer.disconnect()
     }, [])
 
-    // Scroll progress bar
     const { scrollYProgress } = useScroll()
     const scaleX = useSpring(scrollYProgress, { stiffness: 140, damping: 30, mass: 0.2 })
 
@@ -74,7 +72,6 @@ export default function Page() {
                 className="fixed left-0 right-0 top-0 h-[3px] origin-left z-50 bg-gradient-to-r from-fuchsia-500 via-violet-500 to-indigo-500"
             />
 
-            {/* Floating decorative orbs */}
             <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-fuchsia-600/30 blur-3xl animate-pulse" />
             <div className="pointer-events-none absolute top-1/3 -left-24 h-72 w-72 rounded-full bg-violet-700/25 blur-3xl animate-[pulse_6s_ease-in-out_infinite]" />
 
@@ -95,9 +92,7 @@ export default function Page() {
             <ExperienceSection sectionRef={refs.experiencia?.ref as any} />
             <ContactSection sectionRef={refs.contato?.ref as any} />
 
-            {/* Footer */}
             <FooterSection />
-
             <BackToTop />
             <Toaster />
         </main>
