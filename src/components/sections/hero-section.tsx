@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, Rocket, Sparkles } from "lucide-react"
 import pucMinasLogo from '../../../public/logo-pucminas.png'
 import m2cDigitalLogo from '../../../public/logo-m2cdigital.png'
-import profilePhoto from '../../../public/foto-perfil.jpg'
+import profilePhoto from '../../../public/foto-perfil.jpeg'
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
 
@@ -67,9 +67,10 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                             </div>
                         </div>
                     </div>
-                    <div className="relative mx-auto h-52 w-52 sm:h-64 sm:w-64">
+                    {/* Container da imagem com translate para subir */}
+                    <div className="relative mx-auto h-80 w-80 sm:h-85 sm:w-85 -translate-y-18">
                         <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-violet-600/40 to-fuchsia-500/30 blur-2xl" />
-                        <div className="relative rounded-2xl border border-white/10 bg-black/30 p-1 backdrop-blur">
+                        <div className="relative rounded-3xl border border-white/10 bg-black/30 p-1 backdrop-blur">
                             <Image src={profilePhoto} alt="João Marcelo" width={640} height={640} className="rounded-xl" />
                         </div>
                     </div>
