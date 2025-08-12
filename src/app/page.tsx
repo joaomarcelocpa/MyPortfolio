@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useEffect, useMemo, useState } from "react"
 import { Toaster } from "@/components/ui/toaster"
 import { motion, useScroll, useSpring } from "framer-motion"
-import galaxiaBackground from '../../public/galaxia.jpg'
+import galaxiaBackground from '../../public/galaxia-r.jpg'
 
 import Navbar from "@/components/navbar"
 import StarsCanvas from "@/components/stars-canvas"
