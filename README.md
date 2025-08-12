@@ -4,10 +4,6 @@
   <img src="public/foto-perfil.jpeg" alt="João Marcelo" width="150" style="border-radius: 50%;" />
 
 <h3>Software Engineer & Full-Stack Developer</h3>
-
-[![GitHub](https://img.shields.io/badge/GitHub-joaomarcelocpa-181717?style=for-the-badge&logo=github)](https://github.com/joaomarcelocpa/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-joaomarcelocpa-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/joaomarcelocpa/)
-[![Instagram](https://img.shields.io/badge/Instagram-joaomarcelocpa-E4405F?style=for-the-badge&logo=instagram)](https://instagram.com/joaomarcelocpa/)
 </div>
 
 ---
