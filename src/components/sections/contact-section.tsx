@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Github, Linkedin, Mail } from "lucide-react"
+import {Github, Instagram, Linkedin, Mail} from "lucide-react"
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
 import { useToast } from "@/hooks/use-toast"
@@ -76,10 +76,19 @@ export default function ContactSection({ sectionRef }: ContactSectionProps) {
 
                     <Card className="bg-white/5 border-white/10">
                         <CardHeader>
-                            <CardTitle className="text-white">Redes</CardTitle>
+                            <CardTitle className="text-white">Redes Sociais</CardTitle>
                             <CardDescription className="text-white/70">Links diretos</CardDescription>
                         </CardHeader>
                         <CardContent className="flex flex-col gap-3">
+                            <Button
+                                variant="outline"
+                                className="justify-start border-white/15 text-white hover:bg-white/10 bg-transparent"
+                                asChild
+                            >
+                                <a href="https://instagram.com/joaomarcelocpa/" target="_blank" rel="noreferrer">
+                                    <Instagram className="mr-2 h-4 w-4" /> Instagram
+                                </a>
+                            </Button>
                             <Button
                                 variant="outline"
                                 className="justify-start border-white/15 text-white hover:bg-white/10 bg-transparent"
