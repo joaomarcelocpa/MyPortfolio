@@ -1,9 +1,19 @@
-# ㅤㅤㅤㅤ ㅤPortfólio Pessoal - João Marcelo
-
 <div align="center">
-  <img src="public/foto-perfil.jpeg" alt="João Marcelo" width="150" style="border-radius: 50%;" />
-
-<h3>Software Engineer & Full-Stack Developer</h3>
+  <table border="0" cellpadding="0" cellspacing="0" style="border: none; width: 120%; max-width: 1200px;">
+    <tr>
+      <td align="left" valign="middle" style="padding-right: 80px; padding-left: 70px;">
+        <h1 style="margin: 0; font-size: 4.5em; font-weight: bold;">
+          <strong>Portfólio Pessoal<br>João Marcelo</strong>
+        </h1>
+        <h3 style="margin: 15px 0 0 0; font-size: 1.4em; color: #666;">
+          <strong>Software Engineer & Full-Stack Developer</strong>
+        </h3>
+      </td>
+      <td align="right" valign="middle" style="padding-right: 40px;">
+        <img src="public/foto-perfil.jpeg" alt="João Marcelo" width="180" style="border-radius: 50%;" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -115,12 +125,6 @@ pnpm dev
 
 4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-### Build para Produção
-
-```bash
-npm run build
-npm start
-```
 
 ## 📱 Responsividade
 
@@ -137,6 +141,22 @@ O portfólio foi desenvolvido com mobile-first approach, garantindo uma experiê
 - ✅ **Code Splitting** automático
 - ✅ **Compressão** de assets
 - ✅ **Otimização** de fontes com next/font
+
+## 🔧 Features Técnicas
+
+- 🎨 **Video Background** - Fundo de vídeo de galáxia imersivo
+- 🌟 **Canvas Animation** - Animação de estrelas customizada
+- 📱 **PWA Ready** - Preparado para instalação como app
+- 🔄 **Auto-scroll** - Navegação suave entre seções
+- 🔍 **SEO Optimized** - Meta tags e estrutura otimizada
+- 📊 **Intersection Observer** - Detecção de seções visíveis
+
+## 🌐 Redes Sociais
+
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/joaomarcelocpa/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joaomarcelocpa/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/joaomarcelocpa/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:joao@example.com)
 
 ## 📄 Licença
 
@@ -157,4 +177,6 @@ Sou estudante de **Engenharia de Software** na **PUC Minas** e desenvolvedor **F
 <div align="center">
   <p>Desenvolvido com ❤️ por João Marcelo</p>
   <p>© 2025 - Todos os direitos reservados</p>
+  
+  ⭐ **Se gostou do projeto, deixe uma estrela!** ⭐
 </div>
