@@ -35,7 +35,7 @@ export default function ExperienceSection({ sectionRef }: ExperienceSectionProps
             <Reveal>
                 <header className="mb-6">
                     <h2 className="text-3xl font-bold">Experiência</h2>
-                    <p className="text-white/70">Linguagens, ferramentas e plataformas que utilizo.</p>
+                    <p className="text-white/70">Linguagens, ferramentas e plataformas que utilizo:</p>
                 </header>
                 <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
                     {skills.map((s) => (

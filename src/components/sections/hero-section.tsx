@@ -18,7 +18,7 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
             <Reveal>
                 <div className="grid items-center gap-10 md:grid-cols-[1fr_1.2fr]">
                     <div className="space-y-6">
-                        <Badge className="w-fit bg-violet-500 hover:bg-violet-500/90">
+                        <Badge className="text-sm w-fit bg-violet-500 hover:bg-violet-500/90">
                             <Sparkles className="mr-2 h-3.5 w-3.5" />
                             Olá, eu sou
                         </Badge>

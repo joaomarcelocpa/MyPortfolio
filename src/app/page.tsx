@@ -1,11 +1,9 @@
 "use client"
 
 import type React from "react"
-import Image from "next/image"
 import { useEffect, useMemo, useState } from "react"
 import { Toaster } from "@/components/ui/toaster"
 import { motion, useScroll, useSpring } from "framer-motion"
-import galaxiaBackground from '../../public/galaxia-r.jpg'
 
 import Navbar from "@/components/navbar"
 import StarsCanvas from "@/components/stars-canvas"
@@ -59,14 +57,22 @@ export default function Page() {
 
     return (
         <main className="relative min-h-screen text-white antialiased overflow-x-hidden">
-            {/* Background: galaxy image + gradient + stars canvas */}
             <div className="fixed inset-0 -z-20">
-                <Image src={galaxiaBackground} alt="Fundo de galáxia" fill priority className="object-cover" />
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="h-full w-full object-cover"
+                    preload="auto"
+                >
+                    <source src="/video-galaxia.mp4" type="video/mp4" />
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#1a0b2e]/70 to-black/90" />
             </div>
             <StarsCanvas />
 
-            {/* Animated scroll progress bar */}
             <motion.div
                 style={{ scaleX }}
                 className="fixed left-0 right-0 top-0 h-[3px] origin-left z-50 bg-gradient-to-r from-fuchsia-500 via-violet-500 to-indigo-500"

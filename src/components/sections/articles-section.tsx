@@ -29,7 +29,7 @@ export default function ArticlesSection({ sectionRef }: ArticlesSectionProps) {
                 <header className="mb-8">
                     <h2 className="text-3xl font-bold text-white mb-2">Artigos</h2>
                     <p className="text-white/70 text-lg">
-                        Artigos técnicos que escrevi sobre desenvolvimento, arquitetura e boas práticas.
+                        Artigos científicos e trabalhos de pesquisa que participei:
                     </p>
                 </header>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
