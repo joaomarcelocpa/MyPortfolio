@@ -26,7 +26,7 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                             João Marcelo Carvalho Pereira Araújo
                         </h1>
                         <p className="text-base leading-relaxed text-white/80">
-                            Estudante de Engenharia de Software na PUC Minas e desenvolver full-stack na M2C Digital. Apaixonado por
+                            Estudante de Engenharia de Software na PUC Minas e desenvolvedor full-stack na M2C Digital. Apaixonado por
                             programação, otimização e design de aplicações web modernas. Buscando sempre aprender e compartilhar conhecimento.
                         </p>
                         <div className="flex flex-wrap items-center gap-3">

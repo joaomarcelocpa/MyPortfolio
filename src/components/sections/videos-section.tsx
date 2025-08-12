@@ -14,13 +14,13 @@ const videos: Video[] = [
         id: "vid-1",
         title: "Vídeo de apresentação - Fabiana Móveis",
         youtubeId: "4R1hQCg9AQ8",
-        description: "Vídeo de Apresentação do projeto Fabiana Móveis, mostrando as funcionalidades principais da aplicação desenvolvida para otimizar as rotas de entrega da empresa.",
+        description: "Vídeo de apresentação do projeto Fabiana Móveis, mostrando as funcionalidades principais da aplicação desenvolvida para otimizar as rotas de entrega da empresa.",
     },
     {
         id: "vid-2",
         title: "Vídeo de apresentação - Gnosi",
         youtubeId: "dG2RQ9XAAqE",
-        description: "Vídeo de Apresentação do projeto Gnosi, mostrando as principais funcionalidades do software que simula uma plataforma de cursos online.",
+        description: "Vídeo de apresentação do projeto Gnosi, mostrando as principais funcionalidades do desenvolvimento do software da plataforma de ensino e cursos online gratuita.",
     },
 ]
 

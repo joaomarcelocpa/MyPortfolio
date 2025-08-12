@@ -30,7 +30,7 @@ export default function Navbar({
                     </div>
                     <div className="leading-tight">
                         <div className="font-semibold text-white">João Marcelo</div>
-                        <div className="text-xs text-white/60">Software Developer</div>
+                        <div className="text-xs text-white/60">Software Engineer and Developer</div>
                     </div>
                 </div>
 
