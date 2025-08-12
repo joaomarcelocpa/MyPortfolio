@@ -108,19 +108,11 @@ cd portfolio
 2. Instale as dependências:
 ```bash
 npm install
-# ou
-yarn install
-# ou
-pnpm install
 ```
 
 3. Execute o projeto em modo de desenvolvimento:
 ```bash
 npm run dev
-# ou
-yarn dev
-# ou
-pnpm dev
 ```
 
 4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
@@ -158,19 +150,11 @@ O portfólio foi desenvolvido com mobile-first approach, garantindo uma experiê
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/joaomarcelocpa/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:joao@example.com)
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 👨‍💻 Sobre Mim
 
 Sou estudante de **Engenharia de Software** na **PUC Minas** e desenvolvedor **Full-Stack** na **M2C Digital**. Apaixonado por tecnologia, sempre buscando aprender novas ferramentas e compartilhar conhecimento através de projetos open source.
 
-### 🎓 Formação
-- **Engenharia de Software** - PUC Minas (em andamento)
-
-### 💼 Experiência Profissional
-- **Desenvolvedor Full-Stack** - M2C Digital
 
 ---
 
