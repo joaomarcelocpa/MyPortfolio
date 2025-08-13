@@ -3,7 +3,7 @@ import Reveal from "@/components/reveal"
 import ProjectCard from "../cards/project-card"
 import logoEasyTraining from '../../../public/logo-easytraining.jpeg'
 import logoGnosi from "../../../public/logo-gnosif.jpeg"
-import logoFabianaMoveis from "../../../public/logo-fabiana.png"
+import logoFabianaMoveis from "../../../public/logo-fabianam.png"
 import logoM2CPainel from "../../../public/logo-m2c.png"
 import logoXulambs from "../../../public/logo-xulambspark.jpeg"
 import type { StaticImageData } from "next/image"
