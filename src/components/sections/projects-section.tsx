@@ -1,11 +1,12 @@
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
 import ProjectCard from "../cards/project-card"
-import logoEasyTraining from '../../../public/logo-easytraining.jpeg'
-import logoGnosi from "../../../public/logo-gnosif.jpeg"
+import logoEasyTraining from '../../../public/logo-easytraining.png'
+import logoGnosi from "../../../public/logo-gnosi.png"
 import logoFabianaMoveis from "../../../public/logo-fabianam.png"
 import logoM2CPainel from "../../../public/logo-m2c.png"
-import logoXulambs from "../../../public/logo-xulambspark.jpeg"
+import logoXulambs from "../../../public/logo-xulambs.png"
+import logoHuni from "../../../public/logo-huni.png"
 import type { StaticImageData } from "next/image"
 
 type Project = {
@@ -49,7 +50,7 @@ const projects: Project[] = [
     {
         id: "proj-4",
         title: "M2C Painel",
-        description: "Plataforma de envio de SMS massivos e gestão de campanhas.",
+        description: "Plataforma de controle e gestão de recursos para campanhas de mensagens SMS.",
         tags: ["React.js", "Nest.js", "PostgreSQL", "MongoDB", "OpenSearch" ,"Amazon AWS"],
         image: logoM2CPainel,
         details:
@@ -57,6 +58,15 @@ const projects: Project[] = [
     },
     {
         id: "proj-5",
+        title: "Huni BR",
+        description: "Plataforma de revenda e envio de mensagens SMS massivos",
+        tags: ["React.js", "Nest.js", "PostgreSQL", "MongoDB", "OpenSearch" ,"Amazon AWS"],
+        image: logoHuni,
+        details:
+            "Aplicação web que promove fichas de academia gratuitas e personalizadas. Desenvolvida com tecnologias web fundamentais (HTML, CSS e JavaScript), oferece uma interface intuitiva para criação de treinos personalizados de acordo com as necessidades de cada usuário.",
+    },
+    {
+        id: "proj-6",
         title: "Java Parking",
         description: "Sistema de gestão de parques de estacionamento e cobrança.",
         tags: ["Java", "Java FX ", "PostgreSQL", "Microsoft Azure"],

@@ -24,16 +24,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Card className="group cursor-pointer overflow-hidden border-white/10 bg-white/5 transition hover:border-violet-500/40 hover:shadow-[0_0_0_1px_rgba(139,92,246,0.4)]">
+                <Card className="group cursor-pointer overflow-hidden bg-white/5 transition border-transparent">
                     <div className="relative">
                         <Image
                             src={project.image}
                             alt={project.title}
                             width={1120}
                             height={640}
-                            className="aspect-video w-full object-contain bg-white/5 transition duration-300 group-hover:scale-[1.02]"
+                            className="aspect-video w-full object-cover transition duration-300 group-hover:scale-[1.05]"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     </div>
                     <CardHeader>
                         <CardTitle className="text-white">{project.title}</CardTitle>
@@ -60,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         alt={project.title}
                         width={1120}
                         height={640}
-                        className="aspect-video w-full rounded-lg object-contain bg-white/5"
+                        className="aspect-video w-full rounded-lg object-cover"
                     />
                     <p className="text-white/80">{project.details}</p>
                     <div className="flex flex-wrap gap-2">
