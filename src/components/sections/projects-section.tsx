@@ -3,7 +3,7 @@ import Reveal from "@/components/reveal"
 import ProjectCard from "../cards/project-card"
 import logoEasyTraining from '../../../public/logo-easytraining.jpeg'
 import logoGnosi from "../../../public/logo-gnosif.jpeg"
-import logoFabianaMoveis from "../../../public/logo-fabiana-moveis.png"
+import logoFabianaMoveis from "../../../public/logo-fabiana.png"
 import logoM2CPainel from "../../../public/logo-m2c.png"
 import logoXulambs from "../../../public/logo-xulambspark.jpeg"
 import type { StaticImageData } from "next/image"
@@ -78,7 +78,7 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             <Reveal>
                 <header className="mb-6">
                     <h2 className="text-3xl font-bold">Projetos</h2>
-                    <p className="text-white/70">Meus projetos desenvolvidos durante a minha carreira:</p>
+                    <p className="text-white/70">Meus projetos desenvolvidos durante a minha jornada:</p>
                 </header>
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((p) => (
