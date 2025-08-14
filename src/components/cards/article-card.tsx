@@ -20,9 +20,13 @@ export default function ArticleCard({ article }: ArticleCardProps) {
             {/* Preview do PDF */}
             <div className="relative aspect-[4/3] bg-white/5 border-b border-white/10">
                 <iframe
-                    src={`${article.pdfUrl}#toolbar=0&navpanes=0&scrollbar=0&zoom=50`}
+                    src={`${article.pdfUrl}#page=1&view=fitH&toolbar=0&navpanes=0&scrollbar=200&zoom=300&scrollto=center`}
                     className="w-full h-full pointer-events-none"
                     title={`Preview de ${article.title}`}
+                    style={{
+                        objectFit: "cover",
+                        objectPosition: "center",
+                    }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm rounded-md px-2 py-1">
