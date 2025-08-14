@@ -112,7 +112,7 @@ export default function ContactSection({ sectionRef }: ContactSectionProps) {
                                 className="justify-start border-white/15 text-white hover:bg-white/10 bg-transparent"
                                 asChild
                             >
-                                <a href="mailto:joao@example.com">
+                                <a href="joaomarcelocpa0303@gmail.com">
                                     <Mail className="mr-2 h-4 w-4" /> E-mail
                                 </a>
                             </Button>
