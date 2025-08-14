@@ -22,6 +22,10 @@
 
 Este é meu portfólio pessoal desenvolvido com as mais modernas tecnologias web. O site apresenta uma experiência visual imersiva com animações fluidas, design responsivo e uma interface intuitiva que destaca meus projetos, experiência e artigos científicos.
 
+## 🚀 Como Executar
+
+- **Clique aqui:** https://joaomarcelocpa.vercel.app
+
 ### ✨ Características Principais
 
 - **Design Moderno**: Interface com tema espacial utilizando vídeo de fundo e animações de estrelas
@@ -69,53 +73,22 @@ src/
 ## 🎨 Seções do Portfólio
 
 ### 🏠 **Hero Section**
-Apresentação pessoal com foto, descrição profissional e links para redes sociais.
+- Apresentação pessoal com foto, descrição profissional e links para redes sociais.
 
 ### 💼 **Projetos**
-Showcase dos principais projetos desenvolvidos, incluindo:
-- **Fabiana Móveis** - Sistema de rotas de entrega com Google Maps API
-- **Gnosi** - Plataforma educacional para cursos de tecnologia
-- **Easy Training** - Gerador de fichas de treino personalizadas
-- **M2C Painel** - Plataforma de envio de SMS massivos
-- **Java Parking** - Sistema de gestão de estacionamentos
+- Showcase dos principais projetos desenvolvidos durante a minha trajetória como desenvolvedor.
 
 ### 🎥 **Vídeos**
-Demonstrações em vídeo dos projetos desenvolvidos, integradas diretamente do YouTube.
+- Demonstrações em vídeo dos projetos desenvolvidos, integradas diretamente do YouTube.
 
 ### 📚 **Artigos**
-Artigos científicos e trabalhos de pesquisa com visualização de PDF integrada.
+- Artigos científicos e trabalhos de pesquisa com visualização de PDF integrada.
 
 ### 💻 **Experiência**
-Showcase das tecnologias e ferramentas que domino, com indicadores visuais de proficiência.
+- Showcase das tecnologias e ferramentas que domino, com indicadores visuais de proficiência.
 
 ### 📞 **Contato**
-Formulário de contato funcional e links diretos para redes sociais.
-
-## 🚀 Como Executar
-
-### Pré-requisitos
-- Node.js 18+
-- npm, yarn, pnpm ou bun
-
-### Instalação
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/joaomarcelocpa/portfolio.git
-cd portfolio
-```
-
-2. Instale as dependências:
-```bash
-npm install
-```
-
-3. Execute o projeto em modo de desenvolvimento:
-```bash
-npm run dev
-```
-
-4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+- Formulário de contato funcional e links diretos para redes sociais.
 
 
 ## 📱 Responsividade
@@ -159,7 +132,6 @@ Sou estudante de **Engenharia de Software** na **PUC Minas** e desenvolvedor **F
 ---
 
 <div align="center">
-  <p>Desenvolvido com ❤️ por João Marcelo</p>
   <p>© 2025 - Todos os direitos reservados</p>
   
   ⭐ **Se gostou do projeto, deixe uma estrela!** ⭐
