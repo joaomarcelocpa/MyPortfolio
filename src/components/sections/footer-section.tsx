@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Separator } from "@/components/ui/separator"
-import pucMinasLogo from '../../../public/logo-pucminas.png'
-import m2cDigitalLogo from '../../../public/logo-m2cdigital.png'
+import pucMinasLogo from '../../../public/logos/logo-pucminas.png'
+import m2cDigitalLogo from '../../../public/logos/logo-m2cdigital.png'
 
 export default function FooterSection() {
     return (

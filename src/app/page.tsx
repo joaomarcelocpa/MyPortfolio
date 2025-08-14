@@ -66,7 +66,7 @@ export default function Page() {
                     className="h-full w-full object-cover"
                     preload="auto"
                 >
-                    <source src="/video-galaxia.mp4" type="video/mp4" />
+                    <source src="/logos/video-galaxia.mp4" type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#1a0b2e]/70 to-black/90" />

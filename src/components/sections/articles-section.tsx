@@ -14,7 +14,7 @@ const articles: Article[] = [
         id: "art-1",
         title: "Análise da Precisão de IAs Generativas na Resolução de Equações Matemáticas",
         description: "Este trabalho investiga o desempenho de sistemas de inteligência artificial generativa na resolução de equações matemáticas, com foco em integrais de diferentes níveis de dificuldade",
-        pdfUrl: "/artigo.pdf",
+        pdfUrl: "/articles/artigo.pdf",
     }
 ]
 

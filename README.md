@@ -10,7 +10,7 @@
         </h3>
       </td>
       <td align="right" valign="middle" style="padding-right: 40px;">
-        <img src="public/foto-perfil.jpeg" alt="João Marcelo" width="180" style="border-radius: 50%;" />
+        <img src="public/logos/foto-perfil.jpeg" alt="João Marcelo" width="180" style="border-radius: 50%;" />
       </td>
     </tr>
   </table>

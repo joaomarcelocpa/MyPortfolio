@@ -1,12 +1,12 @@
 import Section from "@/components/section"
 import Reveal from "@/components/reveal"
 import ProjectCard from "../cards/project-card"
-import logoEasyTraining from '../../../public/logo-easytraining.png'
-import logoGnosi from "../../../public/logo-gnosi.png"
-import logoFabianaMoveis from "../../../public/logo-fabianam.png"
-import logoM2CPainel from "../../../public/logo-m2c.png"
-import logoXulambs from "../../../public/logo-xulambs.png"
-import logoHuni from "../../../public/logo-huni.png"
+import logoEasyTraining from '../../../public/projects/logo-easytraining.png'
+import logoGnosi from "../../../public/projects/logo-gnosi.png"
+import logoFabianaMoveis from "../../../public/projects/logo-fabianam.png"
+import logoM2CPainel from "../../../public/projects/logo-m2c.png"
+import logoXulambs from "../../../public/projects/logo-xulambs.png"
+import logoHuni from "../../../public/projects/logo-huni.png"
 import type { StaticImageData } from "next/image"
 
 type Project = {
