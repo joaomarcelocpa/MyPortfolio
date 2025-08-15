@@ -114,7 +114,9 @@ portfolio/
 │       └── utils.ts                # Funções utilitárias (cn para classes CSS)
 ```
 
-## 🎨 Seções do Portfólio com Wireframes
+## 🎨 Seções do Portfólio com Protótipos
+
+> **Acesse os protótipos e wireframes por meio desse link:** [Link do Meu Figma](https://www.figma.com/design/21GuAHTi0qqtOKIIUOgVXq/Sem-t%C3%ADtulo?node-id=0-1&t=3DIdvc9iWeOYuHRM-1)
 
 ### 🏠 **Hero Section**
 Apresentação pessoal com foto, descrição profissional e links para redes sociais
