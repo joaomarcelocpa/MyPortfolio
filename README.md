@@ -1,6 +1,6 @@
 #  👨‍💻 Portfólio Pessoal - João Marcelo
 
-- **Acesse aqui:** https://joaomarcelocpa.vercel.app
+ **Clique aqui:** https://joaomarcelocpa.vercel.app
 
 ## 📋 Sobre o Projeto
 
@@ -40,7 +40,6 @@ Certifique-se de ter instalado em sua máquina:
    
    Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-
 ## ✨ Características Principais
 
 - **Design Moderno**: Interface com tema espacial utilizando vídeo de fundo e animações de estrelas
@@ -64,54 +63,89 @@ Certifique-se de ter instalado em sua máquina:
 - **Lucide React** - Ícones modernos
 - **Class Variance Authority** - Utilitário para variantes de componentes
 - **Tailwind Merge** - Otimização de classes CSS
-- **EmailJS** - Integração para formulário de contato
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura Detalhada do Projeto
 
 ```
 portfolio/
-├── public/                    # Arquivos estáticos
-│   ├── logos/                # Imagens de logos e perfil
-│   ├── projects/             # Imagens dos projetos
-│   └── articles/             # PDFs dos artigos
+├── public/                          # Arquivos estáticos
+│   ├── logos/                       # Imagens de logos e perfil
+│   ├── projects/                    # Imagens dos projetos
+│   ├── articles/                    # PDFs dos artigos
+│   └── wireframes/                  # Wireframes das seções
 ├── src/
-│   ├── app/                  # App Router do Next.js
-│   ├── components/           # Componentes React
-│   │   ├── cards/           # Cards para projetos, artigos, etc.
-│   │   ├── sections/        # Seções da página
-│   │   └── ui/              # Componentes de interface
-│   ├── hooks/               # Hooks customizados
-│   └── lib/                 # Utilitários
+│   ├── app/                        # App Router do Next.js
+│   │   ├── globals.css             # Estilos globais da aplicação
+│   │   ├── layout.tsx              # Layout principal com metadados
+│   │   └── page.tsx                # Página principal com todas as seções
+│   ├── components/                 # Componentes React
+│   │   ├── cards/                  # Cards para diferentes tipos de conteúdo
+│   │   │   ├── article-card.tsx    # Card para exibição de artigos com preview de PDF
+│   │   │   ├── project-card.tsx    # Card para projetos com modal detalhado
+│   │   │   ├── skill-card.tsx      # Card para habilidades com barra de progresso
+│   │   │   └── video-card.tsx      # Card para vídeos do YouTube integrado
+│   │   ├── sections/               # Seções principais da página
+│   │   │   ├── articles-section.tsx    # Seção de artigos científicos
+│   │   │   ├── contact-section.tsx     # Seção de contato com formulário
+│   │   │   ├── experience-section.tsx  # Seção de habilidades e tecnologias
+│   │   │   ├── footer-section.tsx      # Rodapé com informações profissionais
+│   │   │   ├── hero-section.tsx        # Seção principal de apresentação
+│   │   │   ├── projects-section.tsx    # Seção de projetos desenvolvidos
+│   │   │   └── videos-section.tsx      # Seção de vídeos demonstrativos
+│   │   ├── ui/                     # Componentes de interface reutilizáveis
+│   │   │   ├── badge.tsx           # Componente de badge/etiqueta
+│   │   │   ├── button.tsx          # Componente de botão com variantes
+│   │   │   ├── card.tsx            # Componente de card base
+│   │   │   ├── dialog.tsx          # Componente de modal/diálogo
+│   │   │   ├── input.tsx           # Componente de campo de entrada
+│   │   │   ├── separator.tsx       # Componente de separador visual
+│   │   │   ├── sheet.tsx           # Componente de painel lateral
+│   │   │   ├── textarea.tsx        # Componente de área de texto
+│   │   │   ├── toast.tsx           # Componente de notificação toast
+│   │   │   └── toaster.tsx         # Provider para gerenciar toasts
+│   │   ├── back-to-top.tsx         # Botão de voltar ao topo
+│   │   ├── navbar.tsx              # Barra de navegação responsiva
+│   │   ├── reveal.tsx              # Componente de animação de entrada
+│   │   ├── section.tsx             # Wrapper para seções da página
+│   │   └── stars-canvas.tsx        # Canvas com animação de estrelas
+│   ├── hooks/                      # Hooks customizados
+│   │   └── use-toast.tsx           # Hook para gerenciar notificações
+│   └── lib/                        # Utilitários
+│       └── utils.ts                # Funções utilitárias (cn para classes CSS)
 ```
 
-## 🎨 Seções do Portfólio
+## 🎨 Seções do Portfólio com Wireframes
 
 ### 🏠 **Hero Section**
-- Apresentação pessoal com foto, descrição profissional e links para redes sociais
+Apresentação pessoal com foto, descrição profissional e links para redes sociais
+
+![Wireframe Hero](wireframes/Hero.png)
 
 ### 💼 **Projetos**
-- Showcase dos principais projetos desenvolvidos durante minha trajetória como desenvolvedor
-- Cards interativos com modais detalhados
+Showcase dos principais projetos desenvolvidos durante minha trajetória como desenvolvedor com cards interativos e modais detalhados
+
+![Wireframe Projetos](wireframes/Projects.png)
 
 ### 🎥 **Vídeos**
-- Demonstrações em vídeo dos projetos desenvolvidos, integradas diretamente do YouTube
+Demonstrações em vídeo dos projetos desenvolvidos, integradas diretamente do YouTube
+
+![Wireframe Vídeos](wireframes/Videos.png)
 
 ### 📚 **Artigos**
-- Artigos científicos e trabalhos de pesquisa com visualização de PDF integrada
+Artigos científicos e trabalhos de pesquisa com visualização de PDF integrada
+
+![Wireframe Artigos](wireframes/Articles.png)
 
 ### 💻 **Experiência**
-- Showcase das tecnologias e ferramentas que domino, com indicadores visuais de proficiência
+Showcase das tecnologias e ferramentas que domino, com indicadores visuais de proficiência
+
+![Wireframe Experiência](wireframes/Experience.png)
 
 ### 📞 **Contato**
-- Formulário de contato funcional e links diretos para redes sociais
+Formulário de contato funcional e links diretos para redes sociais
 
-## 📱 Responsividade
+![Wireframe Contato](wireframes/Contacts.png)
 
-O portfólio foi desenvolvido com mobile-first approach, garantindo uma experiência perfeita em:
-- 📱 Dispositivos móveis (320px+)
-- 📱 Tablets (768px+)
-- 💻 Desktops (1024px+)
-- 🖥️ Telas grandes (1440px+)
 
 ## ⚡ Performance
 
