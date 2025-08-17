@@ -1,10 +1,10 @@
 #  👨‍💻 Portfólio Pessoal - João Marcelo
 
- **Clique aqui:** https://joaomarcelocpa.vercel.app
+ **Clique aqui:** [Link do Portfólio](https://joaomarcelocpa.vercel.app)
 
 ## 📋 Sobre o Projeto
 
-Este é meu portfólio pessoal desenvolvido com as mais modernas tecnologias web. O site apresenta uma experiência visual imersiva com animações fluidas, design responsivo e uma interface intuitiva que destaca meus projetos, experiência e artigos científicos.
+Este é meu portfólio pessoal desenvolvido em Next.js, a mais moderna tecnologia de desenvolvimento Web. O site apresenta uma experiência visual imersiva com animações fluidas, design responsivo e uma interface intuitiva que destaca meus projetos, experiência e artigos científicos, além de uma seção para entrar em contato comigo.
 
 ## 🛠️ Como Executar Localmente
 
