@@ -5,8 +5,8 @@ import { Github, Linkedin, Mail, Rocket, Sparkles } from "lucide-react"
 import pucMinasLogo from '../../../public/logos/logo-pucminas.png'
 import m2cDigitalLogo from '../../../public/logos/logo-m2cdigital.png'
 import profilePhoto from '../../../public/logos/profile-picture.jpeg'
-import Section from "@/components/section"
-import Reveal from "@/components/reveal"
+import Section from "@/components/layout/section"
+import Reveal from "@/components/layout/reveal"
 
 interface HeroSectionProps {
     sectionRef: React.RefObject<HTMLElement>

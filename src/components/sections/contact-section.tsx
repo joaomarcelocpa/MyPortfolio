@@ -3,8 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import {Github, Instagram, Linkedin, Mail} from "lucide-react"
-import Section from "@/components/section"
-import Reveal from "@/components/reveal"
+import Section from "@/components/layout/section"
+import Reveal from "@/components/layout/reveal"
 import { useToast } from "@/hooks/use-toast"
 import type React from "react"
 

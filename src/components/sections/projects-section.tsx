@@ -1,5 +1,5 @@
-import Section from "@/components/section"
-import Reveal from "@/components/reveal"
+import Section from "@/components/layout/section"
+import Reveal from "@/components/layout/reveal"
 import ProjectCard from "../cards/project-card"
 import logoEasyTraining from '../../../public/projects/logo-easytraining.png'
 import logoGnosi from "../../../public/projects/logo-gnosi.png"

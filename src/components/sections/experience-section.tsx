@@ -1,5 +1,5 @@
-import Section from "@/components/section"
-import Reveal from "@/components/reveal"
+import Section from "@/components/layout/section"
+import Reveal from "@/components/layout/reveal"
 import SkillCard from "../cards/skill-card"
 
 const skills = [
