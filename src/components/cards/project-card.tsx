@@ -49,34 +49,77 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     </CardContent>
                 </Card>
             </DialogTrigger>
-            <DialogContent className="max-w-3xl bg-black/70 text-white backdrop-blur border-white/10">
-                <DialogHeader>
-                    <DialogTitle>{project.title}</DialogTitle>
+            <DialogContent className="max-w-3xl bg-slate-900/95 backdrop-blur-sm border-slate-600/30 text-white">
+                <DialogHeader className="space-y-2 pb-4">
+                    <DialogTitle className="text-2xl font-semibold text-white">
+                        {project.title}
+                    </DialogTitle>
+                    <p className="text-slate-300 leading-relaxed">
+                        {project.description}
+                    </p>
                 </DialogHeader>
-                <div className="space-y-4">
-                    <Image
-                        src={project.image}
-                        alt={project.title}
-                        width={1120}
-                        height={640}
-                        className="aspect-video w-full rounded-lg object-cover"
-                    />
-                    <p className="text-white/80">{project.details}</p>
-                    <div className="flex flex-wrap gap-2">
-                        {project.tags.map((t) => (
-                            <Badge key={t} variant="secondary" className="bg-white/10 text-white">
-                                {t}
-                            </Badge>
-                        ))}
+
+                <div className="space-y-6">
+                    {/* Imagem com tamanho reduzido mas sem corte */}
+                    <div className="flex justify-center">
+                        <div className="w-full max-w-lg">
+                            <Image
+                                src={project.image}
+                                alt={project.title}
+                                width={600}
+                                height={360}
+                                className="w-full h-auto object-contain rounded-lg"
+                            />
+                        </div>
                     </div>
-                    {project.link && (
-                        <Button asChild className="bg-violet-600 hover:bg-violet-600/90">
-                            <a href={project.link} target="_blank" rel="noreferrer">
-                                <ExternalLink className="mr-2 h-4 w-4" />
-                                Ver Projeto
-                            </a>
-                        </Button>
-                    )}
+
+                    {/* Layout com duas colunas */}
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {/* Coluna esquerda - Detalhes */}
+                        <div className="md:col-span-2">
+                            <div className="border-l-4 border-violet-500 pl-4">
+                                <h3 className="text-lg font-medium text-white mb-3">
+                                    Sobre o Projeto:
+                                </h3>
+                                <p className="text-slate-300 leading-relaxed">
+                                    {project.details}
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Coluna direita - Tecnologias */}
+                        <div className="space-y-4">
+                            <div>
+
+                                <h3 className="text-lg font-medium text-white mb-3 tracking-wide">
+                                    Tecnologias:
+                                </h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {project.tags.map((tag) => (
+                                        <Badge
+                                            key={tag}
+                                            className="bg-violet-600 hover:bg-violet-700 text-white text-xs font-medium px-3 py-1"
+                                        >
+                                            {tag}
+                                        </Badge>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Botão de ação */}
+                            {project.link && (
+                                <Button
+                                    asChild
+                                    className="w-full bg-violet-600 hover:bg-violet-700 text-white font-medium mt-4"
+                                >
+                                    <a href={project.link} target="_blank" rel="noreferrer">
+                                        <ExternalLink className="mr-2 h-4 w-4" />
+                                        Ver Projeto
+                                    </a>
+                                </Button>
+                            )}
+                        </div>
+                    </div>
                 </div>
             </DialogContent>
         </Dialog>
