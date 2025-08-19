@@ -74,44 +74,45 @@ portfolio/
 │   ├── articles/                    # PDFs dos artigos
 │   └── wireframes/                  # Wireframes das seções
 ├── src/
-│   ├── app/                        # App Router do Next.js
-│   │   ├── globals.css             # Estilos globais da aplicação
-│   │   ├── layout.tsx              # Layout principal com metadados
-│   │   └── page.tsx                # Página principal com todas as seções
-│   ├── components/                 # Componentes React
-│   │   ├── cards/                  # Cards para diferentes tipos de conteúdo
-│   │   │   ├── article-card.tsx    # Card para exibição de artigos com preview de PDF
-│   │   │   ├── project-card.tsx    # Card para projetos com modal detalhado
-│   │   │   ├── skill-card.tsx      # Card para habilidades com barra de progresso
-│   │   │   └── video-card.tsx      # Card para vídeos do YouTube integrado
+│   ├── app/                        # App Router do Next.js 15
+│   │   ├── globals.css             # Estilos globais e animações customizadas
+│   │   ├── layout.tsx              # Layout raiz com metadados e fontes
+│   │   └── page.tsx                # Página principal com gerenciamento de estado
+│   ├── components/                 # Componentes React organizados por categoria
+│   │   ├── cards/                  # Cards especializados para diferentes conteúdos
+│   │   │   ├── article-card.tsx    # Card com preview de PDF e modal
+│   │   │   ├── project-card.tsx    # Card de projeto com modal detalhado
+│   │   │   ├── skill-card.tsx      # Card de habilidade com animação
+│   │   │   └── video-card.tsx      # Card com iframe do YouTube
+│   │   ├── layout/                 # Componentes de layout e navegação
+│   │   │   ├── back-to-top.tsx     # Botão de voltar ao topo
+│   │   │   ├── navbar.tsx          # Navegação responsiva com menu mobile
+│   │   │   ├── reveal.tsx          # Animação de entrada com Framer Motion
+│   │   │   ├── section.tsx         # Wrapper para seções da página
+│   │   │   └── stars-canvas.tsx    # Canvas com animação de estrelas
 │   │   ├── sections/               # Seções principais da página
-│   │   │   ├── articles-section.tsx    # Seção de artigos científicos
-│   │   │   ├── contact-section.tsx     # Seção de contato com formulário
-│   │   │   ├── experience-section.tsx  # Seção de habilidades e tecnologias
-│   │   │   ├── footer-section.tsx      # Rodapé com informações profissionais
-│   │   │   ├── hero-section.tsx        # Seção principal de apresentação
-│   │   │   ├── projects-section.tsx    # Seção de projetos desenvolvidos
-│   │   │   └── videos-section.tsx      # Seção de vídeos demonstrativos
-│   │   ├── ui/                     # Componentes de interface reutilizáveis
-│   │   │   ├── badge.tsx           # Componente de badge/etiqueta
-│   │   │   ├── button.tsx          # Componente de botão com variantes
-│   │   │   ├── card.tsx            # Componente de card base
-│   │   │   ├── dialog.tsx          # Componente de modal/diálogo
-│   │   │   ├── input.tsx           # Componente de campo de entrada
-│   │   │   ├── separator.tsx       # Componente de separador visual
-│   │   │   ├── sheet.tsx           # Componente de painel lateral
-│   │   │   ├── textarea.tsx        # Componente de área de texto
-│   │   │   ├── toast.tsx           # Componente de notificação toast
-│   │   │   └── toaster.tsx         # Provider para gerenciar toasts
-│   │   ├── back-to-top.tsx         # Botão de voltar ao topo
-│   │   ├── navbar.tsx              # Barra de navegação responsiva
-│   │   ├── reveal.tsx              # Componente de animação de entrada
-│   │   ├── section.tsx             # Wrapper para seções da página
-│   │   └── stars-canvas.tsx        # Canvas com animação de estrelas
-│   ├── hooks/                      # Hooks customizados
-│   │   └── use-toast.tsx           # Hook para gerenciar notificações
-│   └── lib/                        # Utilitários
-│       └── utils.ts                # Funções utilitárias (cn para classes CSS)
+│   │   │   ├── articles-section.tsx    # Exibição de artigos científicos
+│   │   │   ├── contact-section.tsx     # Formulário e redes sociais
+│   │   │   ├── experience-section.tsx  # Grade de habilidades técnicas
+│   │   │   ├── footer-section.tsx      # Rodapé com informações acadêmicas
+│   │   │   ├── hero-section.tsx        # Apresentação principal
+│   │   │   ├── projects-section.tsx    # Showcase de projetos
+│   │   │   └── videos-section.tsx      # Galeria de vídeos do YouTube
+│   │   └── ui/                     # Componentes de UI reutilizáveis (Radix)
+│   │       ├── badge.tsx           # Componente de badge/etiqueta
+│   │       ├── button.tsx          # Botão com múltiplas variantes
+│   │       ├── card.tsx            # Estrutura base de cards
+│   │       ├── dialog.tsx          # Modal/diálogo acessível
+│   │       ├── input.tsx           # Campo de entrada de texto
+│   │       ├── separator.tsx       # Linha separadora visual
+│   │       ├── sheet.tsx           # Painel lateral (menu mobile)
+│   │       ├── textarea.tsx        # Área de texto para formulários
+│   │       ├── toast.tsx           # Sistema de notificações
+│   │       └── toaster.tsx         # Provider para gerenciar toasts
+│   ├── hooks/                      # Custom hooks
+│   │   └── use-toast.tsx           # Hook para sistema de notificações
+│   └── lib/                        # Utilitários e helpers
+│       └── utils.ts                # Função para combinar classes CSS
 ```
 
 ## 🎨 Seções do Portfólio com Protótipos
