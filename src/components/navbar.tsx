@@ -67,7 +67,7 @@ export default function Navbar({
                     </SheetTrigger>
                     <SheetContent side="right" className="border-white/10 bg-black/70 text-white backdrop-blur">
                         <SheetHeader>
-                            <SheetTitle className="text-left">Navegação</SheetTitle>
+                            <SheetTitle className="text-left">Menu</SheetTitle>
                         </SheetHeader>
                         <div className="mt-6 flex flex-col gap-2">
                             {sections.map((s) => (

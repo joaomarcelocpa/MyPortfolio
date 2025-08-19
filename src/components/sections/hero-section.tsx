@@ -17,12 +17,12 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
         <Section id="sobre" ref={sectionRef} className="relative">
             <Reveal>
                 <div className="grid items-center gap-10 md:grid-cols-[1fr_1.2fr]">
-                    <div className="space-y-6">
+                    <div className="space-y-6 order-2 md:order-1">
                         <Badge className="text-sm w-fit bg-violet-500 hover:bg-violet-500/90">
                             <Sparkles className="mr-2 h-3.5 w-3.5" />
                             Olá, eu sou
                         </Badge>
-                        <h1 className="text-5xl font-extrabold tracking-tight sm:text-5xl">
+                        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
                             João Marcelo Carvalho Pereira Araújo
                         </h1>
                         <p className="text-base leading-relaxed text-white/80">
@@ -56,19 +56,25 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                                 </Button>
                             </div>
                         </div>
-                        <div className="mt-4 flex items-center gap-6">
+                        <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-6">
                             <div className="flex items-center gap-2">
                                 <Image src={pucMinasLogo} alt="PUC Minas" width={36} height={36} className="..." />
-                                <span className="text-sm text-white/80">PUC Minas  ㅤㅤㅤㅤㅤㅤEngenharia de Software</span>
+                                <div className="text-sm text-white/80">
+                                    <div className="font-medium">PUC Minas</div>
+                                    <div className="text-white/60">Engenharia de Software</div>
+                                </div>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Image src={m2cDigitalLogo} alt="M2C Digital" width={36} height={36} className="..." />
-                                <span className="text-sm text-white/80">M2C Digital ㅤㅤㅤㅤㅤ Desenvolvedor FullStack</span>
+                                <div className="text-sm text-white/80">
+                                    <div className="font-medium">M2C Digital</div>
+                                    <div className="text-white/60">Desenvolvedor FullStack</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    {/* Container da imagem com translate para subir */}
-                    <div className="relative mx-auto h-80 w-80 sm:h-85 sm:w-85 -translate-y-18">
+                    {/* Container da imagem com responsividade ajustada */}
+                    <div className="relative mx-auto h-64 w-64 sm:h-80 sm:w-80 md:h-85 md:w-85 order-1 md:order-2 md:-translate-y-18">
                         <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-violet-600/40 to-fuchsia-500/30 blur-2xl" />
                         <div className="relative rounded-3xl border border-white/10 bg-black/30 p-1 backdrop-blur">
                             <Image src={profilePhoto} alt="João Marcelo" width={640} height={640} className="rounded-xl" />

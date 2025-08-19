@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </DialogTrigger>
 
             <AnimatePresence>
-                <DialogContent className="max-w-5xl bg-gradient-to-br from-slate-900/98 via-slate-800/95 to-slate-900/98 backdrop-blur-xl border border-white/10 text-white overflow-hidden">
+                <DialogContent className="max-w-3xl bg-gradient-to-br from-slate-900/98 via-slate-800/95 to-slate-900/98 backdrop-blur-xl border border-white/10 text-white overflow-hidden">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -80,9 +80,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         className="relative"
                     >
                         {/* Header com gradiente */}
-                        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-violet-500/20 via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-violet-500/20 via-transparent to-transparent pointer-events-none" />
 
-                        <DialogHeader className="space-y-4 pb-6 relative z-10">
+                        <DialogHeader className="space-y-3 pb-4 relative z-10">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                 className="flex items-center gap-3"
                             >
                                 <div className="bg-violet-500/20 p-2 rounded-lg">
-                                    <Code2 className="h-5 w-5 text-violet-400" />
+                                    <Code2 className="h-4 w-4 text-violet-400" />
                                 </div>
                                 <div className="h-px flex-1 bg-gradient-to-r from-violet-500/50 to-transparent" />
                             </motion.div>
@@ -100,10 +100,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.15, duration: 0.4 }}
                             >
-                                <DialogTitle className="text-2xl font-semibold text-white">
+                                <DialogTitle className="text-xl font-semibold text-white">
                                     {project.title}
                                 </DialogTitle>
-                                <p className="text-slate-300 leading-relaxed mt-3">
+                                <p className="text-slate-300 leading-relaxed mt-2 text-sm">
                                     {project.description}
                                 </p>
                             </motion.div>
@@ -113,43 +113,43 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2, duration: 0.4 }}
-                            className="space-y-8"
+                            className="space-y-6"
                         >
                             {/* Imagem em destaque */}
                             <div className="flex justify-center">
-                                <div className="w-full max-w-lg relative">
-                                    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 p-1">
-                                        <div className="bg-black/40 rounded-xl overflow-hidden">
+                                <div className="w-full max-w-md relative">
+                                    <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 p-1">
+                                        <div className="bg-black/40 rounded-lg overflow-hidden">
                                             <Image
                                                 src={project.image}
                                                 alt={project.title}
-                                                width={600}
-                                                height={360}
-                                                className="w-full h-auto object-contain rounded-lg"
+                                                width={400}
+                                                height={240}
+                                                className="w-full h-auto object-contain rounded-md"
                                             />
                                         </div>
                                     </div>
                                     {/* Efeito de brilho */}
-                                    <div className="absolute -inset-1 bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 rounded-2xl blur-xl opacity-50" />
+                                    <div className="absolute -inset-1 bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 rounded-xl blur-lg opacity-50" />
                                 </div>
                             </div>
 
                             {/* Conteúdo principal */}
-                            <div className="grid lg:grid-cols-3 gap-8">
+                            <div className="grid lg:grid-cols-3 gap-6">
                                 {/* Detalhes do projeto */}
                                 <motion.div
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.3, duration: 0.4 }}
-                                    className="lg:col-span-2 space-y-6"
+                                    className="lg:col-span-2 space-y-4"
                                 >
                                     <div className="relative">
                                         <div className="absolute -left-1 top-0 bottom-0 w-1 bg-gradient-to-b from-violet-500 to-violet-600 rounded-full" />
-                                        <div className="pl-6">
-                                            <h3 className="text-lg font-medium text-white mb-4">
+                                        <div className="pl-5">
+                                            <h3 className="text-base font-medium text-white mb-3">
                                                 Sobre o Projeto
                                             </h3>
-                                            <p className="text-slate-300 leading-relaxed">
+                                            <p className="text-slate-300 leading-relaxed text-sm">
                                                 {project.details}
                                             </p>
                                         </div>
@@ -161,15 +161,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     initial={{ opacity: 0, x: 20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.35, duration: 0.4 }}
-                                    className="space-y-6"
+                                    className="space-y-4"
                                 >
                                     {/* Tecnologias */}
-                                    <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-                                        <h3 className="text-lg font-medium text-white mb-4 flex items-center gap-2">
+                                    <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                                        <h3 className="text-base font-medium text-white mb-3 flex items-center gap-2">
                                             <div className="w-2 h-2 bg-violet-500 rounded-full" />
                                             Tecnologias
                                         </h3>
-                                        <div className="flex flex-wrap gap-2">
+                                        <div className="flex flex-wrap gap-1.5">
                                             {project.tags.map((tag, index) => (
                                                 <motion.div
                                                     key={tag}
@@ -177,7 +177,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                                     animate={{ opacity: 1, scale: 1 }}
                                                     transition={{ delay: 0.4 + index * 0.05, duration: 0.3 }}
                                                 >
-                                                    <Badge className="bg-gradient-to-r from-violet-600/80 to-violet-600/80 hover:from-violet-600 hover:to-violet-600 text-white text-xs font-medium px-3 py-1.5 transition-all duration-200">
+                                                    <Badge className="bg-gradient-to-r from-violet-600/80 to-violet-600/80 hover:from-violet-600 hover:to-violet-600 text-white text-xs font-medium px-2.5 py-1 transition-all duration-200">
                                                         {tag}
                                                     </Badge>
                                                 </motion.div>
@@ -194,7 +194,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                         >
                                             <Button
                                                 asChild
-                                                className="w-full bg-gradient-to-r from-violet-600 to-violet-600 hover:from-violet-700 hover:to-violet-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-violet-500/25 group"
+                                                className="w-full bg-gradient-to-r from-violet-600 to-violet-600 hover:from-violet-700 hover:to-violet-700 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-violet-500/25 group text-sm"
                                             >
                                                 <a href={project.link} target="_blank" rel="noreferrer">
                                                     <ExternalLink className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform duration-200" />
