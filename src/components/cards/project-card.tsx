@@ -42,7 +42,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         </div>
                     </div>
                     <CardHeader className="pb-4">
-                        <CardTitle className="text-white group-hover:text-violet-300 transition-colors duration-300">
+                        <CardTitle className="text-white group-hover:text-white transition-colors duration-300">
                             {project.title}
                         </CardTitle>
                         <CardDescription className="text-white/70 leading-relaxed">

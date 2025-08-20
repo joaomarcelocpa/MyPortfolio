@@ -33,7 +33,7 @@ const projects: Project[] = [
         id: "proj-2",
         title: "Gnosi",
         description: "Plataforma de cursos voltada para compartilhamento de conteúdos de tecnologia.",
-        tags: ["React.js", "Java Spring Boot", "PostgreSQL", "Microsoft Azure"],
+        tags: ["React.js", "Java SpringBoot", "PostgreSQL", "Microsoft Azure"],
         image: logoGnosi,
         details: "Plataforma educacional completa para cursos de tecnologia, organizada em módulos e aulas. Sistema robusto desenvolvido com React.js no frontend e Java Spring Boot no backend, proporcionando uma experiência de aprendizado estruturada e intuitiva.",
     },
