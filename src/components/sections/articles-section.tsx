@@ -1,6 +1,8 @@
+// src/components/sections/articles-section.tsx
 import Section from "@/components/layout/section"
 import Reveal from "@/components/layout/reveal"
 import ArticleCard from "../cards/article-card"
+import { useLanguage } from "@/contexts/language-context"
 
 type Article = {
     id: string
@@ -9,27 +11,29 @@ type Article = {
     pdfUrl: string
 }
 
-const articles: Article[] = [
-    {
-        id: "art-1",
-        title: "Análise da Precisão de IAs Generativas na Resolução de Equações Matemáticas",
-        description: "Este trabalho investiga o desempenho de sistemas de inteligência artificial generativa na resolução de equações matemáticas, com foco em integrais de diferentes níveis de dificuldade",
-        pdfUrl: "/articles/artigo.pdf",
-    }
-]
-
 interface ArticlesSectionProps {
     sectionRef: React.RefObject<HTMLElement>
 }
 
 export default function ArticlesSection({ sectionRef }: ArticlesSectionProps) {
+    const { t } = useLanguage()
+
+    const articles: Article[] = [
+        {
+            id: "art-1",
+            title: t('articles.ai.title'),
+            description: t('articles.ai.description'),
+            pdfUrl: "/articles/artigo.pdf",
+        }
+    ]
+
     return (
         <Section id="artigos" ref={sectionRef}>
             <Reveal>
                 <header className="mb-8">
-                    <h2 className="text-3xl font-bold text-white mb-2">Artigos</h2>
+                    <h2 className="text-3xl font-bold text-white mb-2">{t('articles.title')}</h2>
                     <p className="text-white/70 text-lg">
-                        Artigos científicos e trabalhos de pesquisa que participei:
+                        {t('articles.description')}
                     </p>
                 </header>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

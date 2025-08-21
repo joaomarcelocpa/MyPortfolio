@@ -1,6 +1,8 @@
+// src/components/sections/experience-section.tsx
 import Section from "@/components/layout/section"
 import Reveal from "@/components/layout/reveal"
 import SkillCard from "../cards/skill-card"
+import { useLanguage } from "@/contexts/language-context"
 
 const skills = [
     { name: "Node.js", url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
@@ -30,16 +32,18 @@ interface ExperienceSectionProps {
 }
 
 export default function ExperienceSection({ sectionRef }: ExperienceSectionProps) {
+    const {t} = useLanguage()
+
     return (
         <Section id="experiencia" ref={sectionRef}>
             <Reveal>
                 <header className="mb-6">
-                    <h2 className="text-3xl font-bold">Experiência</h2>
-                    <p className="text-white/70">Linguagens, ferramentas e plataformas que utilizo:</p>
+                    <h2 className="text-3xl font-bold">{t('experience.title')}</h2>
+                    <p className="text-white/70">{t('experience.description')}</p>
                 </header>
                 <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
                     {skills.map((s) => (
-                        <SkillCard key={s.name} name={s.name} logoUrl={s.url} />
+                        <SkillCard key={s.name} name={s.name} logoUrl={s.url}/>
                     ))}
                 </div>
             </Reveal>

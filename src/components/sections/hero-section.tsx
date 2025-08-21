@@ -1,3 +1,4 @@
+// src/components/sections/hero-section.tsx
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -7,12 +8,15 @@ import m2cDigitalLogo from '../../../public/logos/logo-m2cdigital.png'
 import profilePhoto from '../../../public/logos/profile-picture.jpeg'
 import Section from "@/components/layout/section"
 import Reveal from "@/components/layout/reveal"
+import { useLanguage } from "@/contexts/language-context"
 
 interface HeroSectionProps {
     sectionRef: React.RefObject<HTMLElement>
 }
 
 export default function HeroSection({ sectionRef }: HeroSectionProps) {
+    const { t } = useLanguage()
+
     return (
         <Section id="sobre" ref={sectionRef} className="relative">
             <Reveal>
@@ -20,14 +24,13 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                     <div className="space-y-6 order-2 md:order-1">
                         <Badge className="text-sm w-fit bg-violet-500 hover:bg-violet-500/90">
                             <Sparkles className="mr-2 h-3.5 w-3.5" />
-                            Olá, eu sou
+                            {t('hero.badge')}
                         </Badge>
                         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
                             João Marcelo Carvalho Pereira Araújo
                         </h1>
                         <p className="text-base leading-relaxed text-white/80">
-                            Estudante de Engenharia de Software na PUC Minas e desenvolvedor full-stack na M2C Digital. Apaixonado por
-                            programação, otimização e design de aplicações web modernas. Buscando sempre aprender e compartilhar conhecimento.
+                            {t('hero.description')}
                         </p>
                         <div className="flex flex-wrap items-center gap-3">
                             <Button
@@ -35,12 +38,12 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                                 onClick={() => document.getElementById("projetos")?.scrollIntoView({ behavior: "smooth" })}
                             >
                                 <Rocket className="mr-2 h-4 w-4" />
-                                Ver projetos
+                                {t('hero.view.projects')}
                             </Button>
                             <Button variant="outline" className="border-violet-500/50 text-white hover:bg-white/10 bg-transparent">
-                                <a href="mailto:joao@example.com" className="flex items-center">
+                                <a href="mailto:joaomarcelocpa0303@gmail.com" className="flex items-center">
                                     <Mail className="mr-2 h-4 w-4" />
-                                    Entrar em contato
+                                    {t('hero.contact')}
                                 </a>
                             </Button>
                             <div className="flex gap-2">
@@ -61,14 +64,14 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                                 <Image src={pucMinasLogo} alt="PUC Minas" width={36} height={36} className="..." />
                                 <div className="text-sm text-white/80">
                                     <div className="font-medium">PUC Minas</div>
-                                    <div className="text-white/60">Engenharia de Software</div>
+                                    <div className="text-white/60">{t('hero.puc.course')}</div>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Image src={m2cDigitalLogo} alt="M2C Digital" width={36} height={36} className="..." />
                                 <div className="text-sm text-white/80">
                                     <div className="font-medium">M2C Digital</div>
-                                    <div className="text-white/60">Desenvolvedor FullStack</div>
+                                    <div className="text-white/60">{t('hero.m2c.role')}</div>
                                 </div>
                             </div>
                         </div>

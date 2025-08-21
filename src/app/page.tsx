@@ -1,9 +1,11 @@
+// src/app/page.tsx
 "use client"
 
 import type React from "react"
 import { useEffect, useMemo, useState } from "react"
 import { Toaster } from "@/components/ui/toaster"
 import { motion, useScroll, useSpring } from "framer-motion"
+import { useLanguage } from "@/contexts/language-context"
 
 import Navbar from "@/components/layout/navbar"
 import StarsCanvas from "@/components/layout/stars-canvas"
@@ -27,6 +29,8 @@ const sections = [
 
 export default function Page() {
     const [active, setActive] = useState<string>("sobre")
+    const { language } = useLanguage()
+
     const refs = useMemo(
         () =>
             Object.fromEntries(
@@ -51,6 +55,11 @@ export default function Page() {
         }
         return () => observer.disconnect()
     }, [])
+
+    // Atualizar o lang do HTML quando o idioma mudar
+    useEffect(() => {
+        document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en-US'
+    }, [language])
 
     const { scrollYProgress } = useScroll()
     const scaleX = useSpring(scrollYProgress, { stiffness: 140, damping: 30, mass: 0.2 })

@@ -1,6 +1,8 @@
+// src/components/sections/videos-section.tsx
 import Section from "@/components/layout/section"
 import Reveal from "@/components/layout/reveal"
 import VideoCard from "../cards/video-card"
+import { useLanguage } from "@/contexts/language-context"
 
 type Video = {
     id: string
@@ -9,32 +11,34 @@ type Video = {
     description: string
 }
 
-const videos: Video[] = [
-    {
-        id: "vid-1",
-        title: "Vídeo de apresentação - Fabiana Móveis",
-        youtubeId: "4R1hQCg9AQ8",
-        description: "Vídeo de apresentação do projeto Fabiana Móveis, mostrando as funcionalidades principais da aplicação desenvolvida para otimizar as rotas de entrega da empresa.",
-    },
-    {
-        id: "vid-2",
-        title: "Vídeo de apresentação - Gnosi",
-        youtubeId: "dG2RQ9XAAqE",
-        description: "Vídeo de apresentação do projeto Gnosi, mostrando as principais funcionalidades do desenvolvimento do software da plataforma de ensino e cursos online gratuita.",
-    },
-]
-
 interface VideosSectionProps {
     sectionRef: React.RefObject<HTMLElement>
 }
 
 export default function VideosSection({ sectionRef }: VideosSectionProps) {
+    const { t } = useLanguage()
+
+    const videos: Video[] = [
+        {
+            id: "vid-1",
+            title: t('videos.fabiana.title'),
+            youtubeId: "4R1hQCg9AQ8",
+            description: t('videos.fabiana.description'),
+        },
+        {
+            id: "vid-2",
+            title: t('videos.gnosi.title'),
+            youtubeId: "dG2RQ9XAAqE",
+            description: t('videos.gnosi.description'),
+        },
+    ]
+
     return (
         <Section id="videos" ref={sectionRef}>
             <Reveal>
                 <header className="mb-6">
-                    <h2 className="text-3xl font-bold">Vídeos</h2>
-                    <p className="text-white/70">Meu conteúdo produzido no YouTube:</p>
+                    <h2 className="text-3xl font-bold">{t('videos.title')}</h2>
+                    <p className="text-white/70">{t('videos.description')}</p>
                 </header>
                 <div className="grid gap-6 md:grid-cols-2">
                     {videos.map((v) => (

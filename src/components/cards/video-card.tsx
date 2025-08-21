@@ -1,5 +1,7 @@
+// src/components/cards/video-card.tsx
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { PlayCircle } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 type Video = {
     id: string
@@ -13,6 +15,8 @@ interface VideoCardProps {
 }
 
 export default function VideoCard({ video }: VideoCardProps) {
+    const { t } = useLanguage()
+
     return (
         <Card className="overflow-hidden border-white/10 bg-white/5">
             <div className="relative">
@@ -27,7 +31,7 @@ export default function VideoCard({ video }: VideoCardProps) {
                 </div>
                 <div className="absolute left-3 top-3 rounded-md bg-black/60 px-2 py-1 text-xs text-white">
                     <PlayCircle className="mr-1 inline h-3.5 w-3.5" />
-                    YouTube
+                    {t('videos.youtube')}
                 </div>
             </div>
             <CardHeader>

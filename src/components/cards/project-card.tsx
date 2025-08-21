@@ -1,3 +1,4 @@
+// src/components/cards/project-card.tsx
 import Image from "next/image"
 import type { StaticImageData } from "next/image"
 import { Button } from "@/components/ui/button"
@@ -6,6 +7,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, ArrowUpRight, Code2, Sparkles } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { useLanguage } from "@/contexts/language-context"
 
 type Project = {
     id: string
@@ -22,6 +24,8 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+    const { t } = useLanguage()
+
     return (
         <Dialog>
             <DialogTrigger asChild>
@@ -51,9 +55,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     </CardHeader>
                     <CardContent className="pb-6">
                         <div className="flex flex-wrap gap-2">
-                            {project.tags.slice(0, 3).map((t) => (
-                                <Badge key={t} className="bg-violet-600/70 hover:bg-violet-600 text-xs font-medium px-2 py-1">
-                                    {t}
+                            {project.tags.slice(0, 3).map((tag) => (
+                                <Badge key={tag} className="bg-violet-600/70 hover:bg-violet-600 text-xs font-medium px-2 py-1">
+                                    {tag}
                                 </Badge>
                             ))}
                             {project.tags.length > 3 && (
@@ -147,7 +151,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                         <div className="absolute -left-1 top-0 bottom-0 w-1 bg-gradient-to-b from-violet-500 to-violet-600 rounded-full" />
                                         <div className="pl-5">
                                             <h3 className="text-base font-medium text-white mb-3">
-                                                Sobre o Projeto
+                                                {t('projects.about.title')}
                                             </h3>
                                             <p className="text-slate-300 leading-relaxed text-sm">
                                                 {project.details}
@@ -167,7 +171,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     <div className="bg-white/5 rounded-lg p-4 border border-white/10">
                                         <h3 className="text-base font-medium text-white mb-3 flex items-center gap-2">
                                             <div className="w-2 h-2 bg-violet-500 rounded-full" />
-                                            Tecnologias
+                                            {t('projects.technologies')}
                                         </h3>
                                         <div className="flex flex-wrap gap-1.5">
                                             {project.tags.map((tag, index) => (
@@ -198,7 +202,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                             >
                                                 <a href={project.link} target="_blank" rel="noreferrer">
                                                     <ExternalLink className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform duration-200" />
-                                                    Ver Projeto
+                                                    {t('projects.view.project')}
                                                     <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
                                                 </a>
                                             </Button>

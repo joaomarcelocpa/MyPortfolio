@@ -1,7 +1,9 @@
+// src/components/cards/article-card.tsx
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { FileText, ExternalLink, Eye } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 type Article = {
     id: string
@@ -15,6 +17,8 @@ interface ArticleCardProps {
 }
 
 export default function ArticleCard({ article }: ArticleCardProps) {
+    const { t } = useLanguage()
+
     return (
         <Card className="group cursor-pointer overflow-hidden border-white/10 bg-white/5 transition hover:border-violet-500/40">
             {/* Preview do PDF */}
@@ -32,7 +36,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm rounded-md px-2 py-1">
                     <div className="flex items-center gap-1 text-xs text-white">
                         <FileText className="h-3 w-3" />
-                        PDF
+                        {t('articles.pdf')}
                     </div>
                 </div>
             </div>
@@ -54,7 +58,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
                                 className="flex-1 border-white/15 text-white hover:bg-white/10 bg-transparent"
                             >
                                 <Eye className="mr-2 h-4 w-4" />
-                                Visualizar
+                                {t('articles.view')}
                             </Button>
                         </DialogTrigger>
                         <DialogContent className="max-w-5xl max-h-[90vh] bg-black/80 text-white backdrop-blur border-white/10">
@@ -78,7 +82,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
                         className="shrink-0 border-white/15 text-white hover:bg-white/10"
                         asChild
                     >
-                        <a href={article.pdfUrl} target="_blank" rel="noreferrer" aria-label="Abrir PDF em nova aba">
+                        <a href={article.pdfUrl} target="_blank" rel="noreferrer" aria-label={t('articles.open.tab')}>
                             <ExternalLink className="h-4 w-4" />
                         </a>
                     </Button>
