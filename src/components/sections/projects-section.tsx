@@ -54,7 +54,7 @@ const projects: Project[] = [
         tags: ["React.js", "Nest.js", "PostgreSQL", "MongoDB", "OpenSearch" ,"Amazon AWS"],
         image: logoM2CPainel,
         details:
-            "Aplicação web que promove fichas de academia gratuitas e personalizadas. Desenvolvida com tecnologias web fundamentais (HTML, CSS e JavaScript), oferece uma interface intuitiva para criação de treinos personalizados de acordo com as necessidades de cada usuário.",
+            "Plataforma de controle e gestão de recursos para campanhas de mensagens SMS.Desenvolvida utilizando React.js para o frontend e Nest.js para a api e suas aplicações dividas em microserviços, oferece uma interface intuitiva para criação de serviços, empresas, relatórios, dentre outras funcionalidades.",
     },
     {
         id: "proj-5",
@@ -63,7 +63,7 @@ const projects: Project[] = [
         tags: ["React.js", "Nest.js", "PostgreSQL", "MongoDB", "OpenSearch" ,"Amazon AWS"],
         image: logoHuni,
         details:
-            "Aplicação web que promove fichas de academia gratuitas e personalizadas. Desenvolvida com tecnologias web fundamentais (HTML, CSS e JavaScript), oferece uma interface intuitiva para criação de treinos personalizados de acordo com as necessidades de cada usuário.",
+            "Plataforma de revenda e envio de mensagens SMS massivos. Desenvolvida em React.js para o frontend e Nest.js para o backend e os microserviços envolvidos, oferece uma interface intuitiva para envio de mensagens SMS massivas, voltadas para empresas de marketing e casas de apostas.",
     },
     {
         id: "proj-6",
@@ -73,7 +73,7 @@ const projects: Project[] = [
         image: logoXulambs,
         link: "https://github.com/joaomarcelocpa/JavaParking",
         details:
-            "Aplicação web que promove fichas de academia gratuitas e personalizadas. Desenvolvida com tecnologias web fundamentais (HTML, CSS e JavaScript), oferece uma interface intuitiva para criação de treinos personalizados de acordo com as necessidades de cada usuário.",
+            "Aplicação nativa, voltada para a gestão de parques de estacionamentos, desenvolvida em Java para o backend e JavaFX para o frontend, promove uma interface intuitiva para cadastro e alocação de vagas e controle financeiro.",
     },
 
 ]
