@@ -61,3 +61,28 @@ body {
 .modal-content[data-state="closed"] {
     animation: modal-slide-out 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.font-inter {
+    font-family: var(--font-inter);
+}
+
+.font-montserrat {
+    font-family: var(--font-montserrat);
+}
+
+.font-poppins {
+    font-family: var(--font-poppins);
+}
+
+/* ✅ Ou use as variáveis CSS diretamente */
+.title-inter {
+    font-family: var(--font-inter);
+}
+
+.title-montserrat {
+    font-family: var(--font-montserrat);
+}
+
+.title-poppins {
+    font-family: var(--font-poppins);
+}
