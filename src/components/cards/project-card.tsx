@@ -133,8 +133,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                             />
                                         </div>
                                     </div>
-                                    {/* Efeito de brilho */}
-                                    <div className="absolute -inset-1 bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 rounded-xl blur-lg opacity-50" />
                                 </div>
                             </div>
 
