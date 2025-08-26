@@ -86,11 +86,12 @@ const translations = {
         'contact.title': 'Contato',
         'contact.description': 'Vamos conversar? Envie uma mensagem.',
         'contact.form.title': 'Fale comigo',
-        'contact.form.description': 'Este formulário exibe um feedback no app. Você também pode usar os botões ao lado.',
+        'contact.form.description': 'Envie uma mensagem diretamente para meu email.',
         'contact.form.name': 'Seu nome',
         'contact.form.email': 'Seu e-mail',
         'contact.form.message': 'Sua mensagem',
-        'contact.form.send': 'Enviar',
+        'contact.form.send': 'Enviar Mensagem',
+        'contact.form.sending': 'Enviando...',
         'contact.form.email.link': 'ou envie por e-mail',
         'contact.social.title': 'Redes Sociais',
         'contact.social.description': 'Links diretos',
@@ -105,9 +106,13 @@ const translations = {
         'footer.rights': 'Todos os direitos reservados.',
 
         // Toast Messages
-        'toast.message.sent': 'Mensagem enviada!',
-        'toast.message.thanks': 'Obrigado, {name} — retornarei em breve.',
-        'toast.message.thanks.default': 'Obrigado, visitante — retornarei em breve.',
+        'toast.message.sent': 'Mensagem enviada com sucesso!',
+        'toast.message.thanks': 'Obrigado, {name}! Entrarei em contato em breve.',
+        'toast.message.thanks.default': 'Obrigado! Entrarei em contato em breve.',
+        'toast.error.title': 'Erro',
+        'toast.error.required.fields': 'Por favor, preencha todos os campos obrigatórios.',
+        'toast.error.invalid.email': 'Por favor, insira um email válido.',
+        'toast.error.send.failed': 'Erro ao enviar mensagem. Tente novamente ou use o email direto.',
 
         // Back to Top
         'back.to.top': 'Voltar ao topo',
@@ -188,11 +193,12 @@ const translations = {
         'contact.title': 'Contact',
         'contact.description': 'Let\'s talk? Send a message.',
         'contact.form.title': 'Talk to me',
-        'contact.form.description': 'This form displays feedback in the app. You can also use the buttons on the side.',
+        'contact.form.description': 'Send a message directly to my email.',
         'contact.form.name': 'Your name',
         'contact.form.email': 'Your email',
         'contact.form.message': 'Your message',
-        'contact.form.send': 'Send',
+        'contact.form.send': 'Send Message',
+        'contact.form.sending': 'Sending...',
         'contact.form.email.link': 'or send by email',
         'contact.social.title': 'Social Networks',
         'contact.social.description': 'Direct links',
@@ -207,9 +213,13 @@ const translations = {
         'footer.rights': 'All rights reserved.',
 
         // Toast Messages
-        'toast.message.sent': 'Message sent!',
-        'toast.message.thanks': 'Thank you, {name} — I\'ll get back to you soon.',
-        'toast.message.thanks.default': 'Thank you, visitor — I\'ll get back to you soon.',
+        'toast.message.sent': 'Message sent successfully!',
+        'toast.message.thanks': 'Thank you, {name}! I\'ll get back to you soon.',
+        'toast.message.thanks.default': 'Thank you! I\'ll get back to you soon.',
+        'toast.error.title': 'Error',
+        'toast.error.required.fields': 'Please fill in all required fields.',
+        'toast.error.invalid.email': 'Please enter a valid email address.',
+        'toast.error.send.failed': 'Error sending message. Please try again or use direct email.',
 
         // Back to Top
         'back.to.top': 'Back to top',
@@ -227,7 +237,6 @@ interface LanguageProviderProps {
 export function LanguageProvider({ children }: LanguageProviderProps) {
     const [language, setLanguageState] = useState<Language>('pt')
 
-    // Carregar idioma do localStorage na inicialização
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language') as Language
         if (savedLanguage && (savedLanguage === 'pt' || savedLanguage === 'en')) {
@@ -235,17 +244,14 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
         }
     }, [])
 
-    // Função para alterar idioma e salvar no localStorage
     const setLanguage = (lang: Language) => {
         setLanguageState(lang)
         localStorage.setItem('language', lang)
     }
 
-    // Função de tradução
     const t = (key: string, variables?: Record<string, string>): string => {
         let translation = translations[language][key as keyof typeof translations[typeof language]] || key
 
-        // Substituir variáveis na tradução (ex: {name})
         if (variables && typeof translation === 'string') {
             Object.entries(variables).forEach(([variable, value]) => {
                 translation = translation.replace(`{${variable}}`, value)
