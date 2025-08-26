@@ -92,7 +92,7 @@ portfolio/
 │   │   │   └── stars-canvas.tsx    # Canvas com animação de estrelas
 │   │   ├── sections/               # Seções principais da página
 │   │   │   ├── articles-section.tsx    # Exibição de artigos científicos
-│   │   │   ├── contact-section.tsx     # Formulário e redes sociais
+│   │   │   ├── contact-section.tsx     # Formulário de disparo de email e redes sociais
 │   │   │   ├── experience-section.tsx  # Grade de habilidades técnicas
 │   │   │   ├── footer-section.tsx      # Rodapé com informações acadêmicas
 │   │   │   ├── hero-section.tsx        # Apresentação principal
@@ -104,6 +104,7 @@ portfolio/
 │   │       ├── card.tsx            # Estrutura base de cards
 │   │       ├── dialog.tsx          # Modal/diálogo acessível
 │   │       ├── input.tsx           # Campo de entrada de texto
+│   │       ├── language-selector.tsx  # Seletor de idioma
 │   │       ├── separator.tsx       # Linha separadora visual
 │   │       ├── sheet.tsx           # Painel lateral (menu mobile)
 │   │       ├── textarea.tsx        # Área de texto para formulários
@@ -111,7 +112,10 @@ portfolio/
 │   │       └── toaster.tsx         # Provider para gerenciar toasts
 │   ├── hooks/                      # Custom hooks
 │   │   └── use-toast.tsx           # Hook para sistema de notificações
+│   ├── contexts/                   # Contextos 
+│   │   └── linguage-context.tsx    # Arquivo de traduções dos textos
 │   └── lib/                        # Utilitários e helpers
+│       └── emailjs.ts              # Função para validar credenciais do EmailJS
 │       └── utils.ts                # Função para combinar classes CSS
 ```
 
