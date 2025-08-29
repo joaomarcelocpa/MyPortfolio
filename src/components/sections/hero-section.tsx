@@ -40,11 +40,13 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                                 <Rocket className="mr-2 h-4 w-4" />
                                 {t('hero.view.projects')}
                             </Button>
-                            <Button variant="outline" className="border-violet-500/50 text-white hover:bg-white/10 bg-transparent">
-                                <a href="mailto:joaomarcelocpa0303@gmail.com" className="flex items-center">
-                                    <Mail className="mr-2 h-4 w-4" />
-                                    {t('hero.contact')}
-                                </a>
+                            <Button
+                                variant="outline"
+                                className="border-violet-500/50 text-white hover:bg-white/10 bg-transparent"
+                                onClick={() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" })}
+                            >
+                                <Mail className="mr-2 h-4 w-4" />
+                                {t('hero.contact')}
                             </Button>
                             <div className="flex gap-2">
                                 <Button variant="ghost" size="icon" className="hover:bg-white/10" asChild>
