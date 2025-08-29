@@ -26,8 +26,8 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                             <Sparkles className="mr-2 h-3.5 w-3.5" />
                             {t('hero.badge')}
                         </Badge>
-                        <h1 className="text-5xl sm:text-6xl font-bold tracking-tight title-poppins">
-                            João Marcelo Carvalho Pereira Araújo
+                        <h1 className="text-6xl sm:text-7xl font-bold tracking-tight title-poppins">
+                            João Marcelo Carvalho
                         </h1>
                         <p className="text-base leading-relaxed text-white/80">
                             {t('hero.description')}
