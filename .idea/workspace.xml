@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46178b89-8384-4729-b152-5410d69f2b78" name="Changes" comment="" />
+    <list default="true" id="46178b89-8384-4729-b152-5410d69f2b78" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/logo-scheilla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/language-context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/language-context.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -120,7 +125,8 @@
       <workItem from="1756245480615" duration="11000" />
       <workItem from="1756422866834" duration="801000" />
       <workItem from="1756424785961" duration="1652000" />
-      <workItem from="1765737164226" duration="2879000" />
+      <workItem from="1765737164226" duration="3229000" />
+      <workItem from="1765741288750" duration="479000" />
     </task>
     <servers />
   </component>

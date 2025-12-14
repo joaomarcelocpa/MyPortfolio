@@ -60,7 +60,7 @@ const translations = {
         'project.parking.description': 'Sistema de gestão de parques de estacionamento e cobrança.',
         'project.parking.details': 'Sistema desktop para gestão completa de estacionamentos, incluindo controle de entrada/saída, cálculo automático de tarifas e relatórios gerenciais. Desenvolvido em Java com interface JavaFX.',
 
-        'project.scheilla.description': 'Sistema de gestão e promoção de um  centro espírita com landing-page e um painel interno.',
+        'project.scheilla.description': 'Sistema de gestão de doações e promoção de eventos de um centro espírita',
         'project.scheilla.details': 'Sistema de gestão abrangente desenvolvido para o Grupo Espírita Scheilla, um centro espírita. O software inclui funcionalidades para agendamento de eventos, gerenciamento de membros e promoção de conteúdos, aprimorando a eficiência operacional e o engajamento da comunidade do centro.',
 
         'project.virtus.title': 'Virtus Moeda Estudantil',
@@ -179,7 +179,7 @@ const translations = {
         'project.parking.description': 'Parking lot management and billing system.',
         'project.parking.details': 'Desktop system for complete parking management, including entry/exit control, automatic fare calculation and management reports. Developed in Java with JavaFX interface.',
 
-        'project.scheilla.description': 'Management and promotion system for a Spiritist center with a landing page and an internal panel.',
+        'project.scheilla.description': 'Donation management and event promotion system for a Spiritist center.',
         'project.scheilla.details': 'Comprehensive management system developed for Grupo Espírita Scheilla, a spiritist center. The software includes features for event scheduling, member management, and content promotion, enhancing the center\'s operational efficiency and community engagement.',
 
         'project.virtus.title': 'Virtus Student Currency',
