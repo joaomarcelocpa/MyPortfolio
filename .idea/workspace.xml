@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46178b89-8384-4729-b152-5410d69f2b78" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="316ozz7eOiuAGKu8vK6ITf7dYQp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/Users/joaomarcelocpa/Documents/WebStorm/MyPortfolio/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/joaomarcelocpa/Documents/WebStorm/MyPortfolio/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/projects" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/hooks" />
+      <recent name="$PROJECT_DIR$/src/components/layout" />
+      <recent name="$PROJECT_DIR$/wireframes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Next.js: debug client-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46178b89-8384-4729-b152-5410d69f2b78" name="Changes" comment="" />
+      <created>1754854150612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754854150612</updated>
+      <workItem from="1754854151886" duration="1802000" />
+      <workItem from="1754857767985" duration="4846000" />
+      <workItem from="1754867546295" duration="3848000" />
+      <workItem from="1754911308264" duration="2649000" />
+      <workItem from="1754923094675" duration="1809000" />
+      <workItem from="1754932874933" duration="1898000" />
+      <workItem from="1754942227553" duration="153000" />
+      <workItem from="1754998339872" duration="3397000" />
+      <workItem from="1755003613996" duration="2541000" />
+      <workItem from="1755018475476" duration="3634000" />
+      <workItem from="1755024359873" duration="863000" />
+      <workItem from="1755083065480" duration="74000" />
+      <workItem from="1755083151738" duration="2691000" />
+      <workItem from="1755116436349" duration="46000" />
+      <workItem from="1755118557649" duration="3549000" />
+      <workItem from="1755127765155" duration="107000" />
+      <workItem from="1755129808489" duration="597000" />
+      <workItem from="1755133233745" duration="1185000" />
+      <workItem from="1755194760275" duration="395000" />
+      <workItem from="1755216292729" duration="2561000" />
+      <workItem from="1755226417028" duration="878000" />
+      <workItem from="1755281838297" duration="521000" />
+      <workItem from="1755564544026" duration="1339000" />
+      <workItem from="1755601449458" duration="1005000" />
+      <workItem from="1755602767453" duration="1951000" />
+      <workItem from="1755695060032" duration="2139000" />
+      <workItem from="1755734079319" duration="1430000" />
+      <workItem from="1755812626376" duration="129000" />
+      <workItem from="1755813357749" duration="1171000" />
+      <workItem from="1755821335076" duration="3313000" />
+      <workItem from="1755865145597" duration="618000" />
+      <workItem from="1755907726885" duration="618000" />
+      <workItem from="1756165932893" duration="1487000" />
+      <workItem from="1756212300223" duration="2490000" />
+      <workItem from="1756245480615" duration="11000" />
+      <workItem from="1756422866834" duration="801000" />
+      <workItem from="1756424785961" duration="1652000" />
+      <workItem from="1765737164226" duration="2879000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
