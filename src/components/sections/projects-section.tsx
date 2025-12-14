@@ -9,6 +9,9 @@ import logoFabianaMoveis from "../../../public/projects/logo-fabianam.png"
 import logoM2CPainel from "../../../public/projects/logo-m2c.png"
 import logoXulambs from "../../../public/projects/logo-xulambs.png"
 import logoHuni from "../../../public/projects/logo-huni.png"
+import logoGrupoScheilla from "../../../public/projects/logo-scheilla.png"
+import logoVirtus from "../../../public/projects/logo-virtus.png"
+import logoRentalCar from "../../../public/projects/logo-rentalcar.png"
 import type { StaticImageData } from "next/image"
 
 type Project = {
@@ -47,6 +50,15 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
         },
         {
             id: "proj-3",
+            title: "Grupo Espírita Scheilla",
+            description: t('project.scheilla.description'),
+            tags: ["Next.js", "Python Django", "TypeScript", "PostgreSQL", "Amazon AWS"],
+            image: logoGrupoScheilla,
+            link: "https://grupoespiritascheillapl.com/",
+            details: t('project.scheilla.details'),
+        },
+        {
+            id: "proj-4",
             title: "Easy Training",
             description: t('project.easytraining.description'),
             tags: ["HTML", "CSS", "JavaScript", "JSON"],
@@ -55,7 +67,7 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             details: t('project.easytraining.details'),
         },
         {
-            id: "proj-4",
+            id: "proj-5",
             title: "M2C Painel",
             description: t('project.m2c.description'),
             tags: ["React.js", "Nest.js", "PostgreSQL", "MongoDB", "OpenSearch", "Amazon AWS"],
@@ -63,7 +75,7 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             details: t('project.m2c.details'),
         },
         {
-            id: "proj-5",
+            id: "proj-6",
             title: "Huni BR",
             description: t('project.huni.description'),
             tags: ["React.js", "Nest.js", "PostgreSQL", "MongoDB", "OpenSearch", "Amazon AWS"],
@@ -71,7 +83,7 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             details: t('project.huni.details'),
         },
         {
-            id: "proj-6",
+            id: "proj-7",
             title: "Java Parking",
             description: t('project.parking.description'),
             tags: ["Java", "Java FX", "PostgreSQL", "Microsoft Azure"],
@@ -79,6 +91,24 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             link: "https://github.com/joaomarcelocpa/JavaParking",
             details: t('project.parking.details'),
         },
+        {
+            id: "proj-8",
+            title: t('project.virtus.title'),
+            description: t('project.virtus.description'),
+            tags: ["Next.js", "Java SpringBoot", "PostgreSQL", "Render"],
+            image: logoVirtus,
+            link: "https://virtus-psi.vercel.app/",
+            details: t('project.virtus.details'),
+        },
+        {
+            id: "proj-9",
+            title: "Rental Car System",
+            description: t('project.rentalcar.description'),
+            tags: ["Next.js", "Java SpringBoot", "PostgreSQL", "Microsoft Azure"],
+            image: logoRentalCar,
+            details: t('project.rentalcar.details'),
+        },
+
     ]
 
     return (

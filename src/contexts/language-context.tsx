@@ -60,6 +60,16 @@ const translations = {
         'project.parking.description': 'Sistema de gestão de parques de estacionamento e cobrança.',
         'project.parking.details': 'Sistema desktop para gestão completa de estacionamentos, incluindo controle de entrada/saída, cálculo automático de tarifas e relatórios gerenciais. Desenvolvido em Java com interface JavaFX.',
 
+        'project.scheilla.description': 'Sistema de gestão e promoção de um  centro espírita com landing-page e um painel interno.',
+        'project.scheilla.details': 'Sistema de gestão abrangente desenvolvido para o Grupo Espírita Scheilla, um centro espírita. O software inclui funcionalidades para agendamento de eventos, gerenciamento de membros e promoção de conteúdos, aprimorando a eficiência operacional e o engajamento da comunidade do centro.',
+
+        'project.virtus.title': 'Virtus Moeda Estudantil',
+        'project.virtus.description': 'Plataforma de trocas de moedas estudantil para alunos e instituições de ensino.',
+        'project.virtus.details': 'Sistema completo de moeda estudantil desenvolvido para alunos, professores e empresas, permitindo a gestão de vantagens e transações entre alunos, professores e estabelecimentos parceiros. A plataforma visa incentivar o mérito estudantil dentro do ambiente acadêmico.',
+
+        'project.rentalcar.description': 'Sistema de gestão de locadora de veículos com controle de frota e reservas.',
+        'project.rentalcar.details': 'Aplicação web para gestão de serviços de locação de veículos, incluindo gerenciamento de frota, sistema de reservas e gestão de clientes. Desenvolvido com tecnologias web modernas para proporcionar uma experiência eficiente e amigável.',
+
         // Videos Section
         'videos.title': 'Vídeos',
         'videos.description': 'Meu conteúdo produzido no YouTube:',
@@ -68,6 +78,8 @@ const translations = {
         'videos.fabiana.description': 'Vídeo de apresentação do projeto Fabiana Móveis, mostrando as funcionalidades principais da aplicação desenvolvida para otimizar as rotas de entrega da empresa.',
         'videos.gnosi.title': 'Vídeo de apresentação - Gnosi',
         'videos.gnosi.description': 'Vídeo de apresentação do projeto Gnosi, mostrando as principais funcionalidades do desenvolvimento do software da plataforma de ensino e cursos online gratuita.',
+        'videos.gruposcheilla.title': 'Vídeo de apresentação - Grupo Espírita Scheilla',
+        'videos.gruposcheilla.description': 'Vídeo de apresentação do projeto Grupo Espírita Scheilla, detalhando as funcionalidades e o impacto do software desenvolvido para a gestão e promoção do centro espírita.',
 
         // Articles Section
         'articles.title': 'Artigos',
@@ -167,6 +179,16 @@ const translations = {
         'project.parking.description': 'Parking lot management and billing system.',
         'project.parking.details': 'Desktop system for complete parking management, including entry/exit control, automatic fare calculation and management reports. Developed in Java with JavaFX interface.',
 
+        'project.scheilla.description': 'Management and promotion system for a Spiritist center with a landing page and an internal panel.',
+        'project.scheilla.details': 'Comprehensive management system developed for Grupo Espírita Scheilla, a spiritist center. The software includes features for event scheduling, member management, and content promotion, enhancing the center\'s operational efficiency and community engagement.',
+
+        'project.virtus.title': 'Virtus Student Currency',
+        'project.virtus.description': 'Student currency exchange platform for students and educational institutions.',
+        'project.virtus.details': 'Complete student currency system developed for students, teachers and companies, allowing the management of benefits and transactions between students, teachers and partner establishments. The platform aims to encourage student merit within the academic environment.',
+
+        'project.rentalcar.description': 'Car rental management system with fleet control and reservation features.',
+        'project.rentalcar.details': 'Web application for managing car rental services, including fleet management, reservation system, and customer management. Developed with modern web technologies to provide an efficient and user-friendly experience.',
+
         // Videos Section
         'videos.title': 'Videos',
         'videos.description': 'My content produced on YouTube:',
@@ -175,6 +197,8 @@ const translations = {
         'videos.fabiana.description': 'Presentation video of the Fabiana Móveis project, showing the main functionalities of the application developed to optimize the company\'s delivery routes.',
         'videos.gnosi.title': 'Presentation video - Gnosi',
         'videos.gnosi.description': 'Presentation video of the Gnosi project, showing the main functionalities of the software development of the free online teaching and courses platform.',
+        'videos.gruposcheilla.title': 'Presentation video - Grupo Espírita Scheilla',
+        'videos.gruposcheilla.description': 'Presentation video of the Grupo Espírita Scheilla project, detailing the functionalities and impact of the software developed for the management and promotion of the spiritist center.',
 
         // Articles Section
         'articles.title': 'Articles',

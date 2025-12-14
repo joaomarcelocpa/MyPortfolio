@@ -31,6 +31,12 @@ export default function VideosSection({ sectionRef }: VideosSectionProps) {
             youtubeId: "dG2RQ9XAAqE",
             description: t('videos.gnosi.description'),
         },
+        {
+            id: "vid-3",
+            title: t('videos.gruposcheilla.title'),
+            youtubeId: "NBcOky2k8-U",
+            description: t('videos.gruposcheilla.description'),
+        }
     ]
 
     return (
@@ -40,7 +46,7 @@ export default function VideosSection({ sectionRef }: VideosSectionProps) {
                     <h2 className="text-3xl font-bold">{t('videos.title')}</h2>
                     <p className="text-white/70">{t('videos.description')}</p>
                 </header>
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid gap-6 md:grid-cols-3">
                     {videos.map((v) => (
                         <VideoCard key={v.id} video={v} />
                     ))}
