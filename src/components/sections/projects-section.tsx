@@ -63,7 +63,6 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             description: t('project.easytraining.description'),
             tags: ["HTML", "CSS", "JavaScript", "JSON"],
             image: logoEasyTraining,
-            link: "https://easy-training-diogobrunoros-projects.vercel.app/",
             details: t('project.easytraining.details'),
         },
         {
@@ -97,7 +96,7 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             description: t('project.virtus.description'),
             tags: ["Next.js", "Java SpringBoot", "PostgreSQL", "Render"],
             image: logoVirtus,
-            link: "https://virtus-psi.vercel.app/",
+            link: "https://github.com/joaomarcelocpa/Virtus",
             details: t('project.virtus.details'),
         },
         {
@@ -106,6 +105,7 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             description: t('project.rentalcar.description'),
             tags: ["Next.js", "Java SpringBoot", "PostgreSQL", "Microsoft Azure"],
             image: logoRentalCar,
+            link: "https://github.com/joaomarcelocpa/CarRentalSystem",
             details: t('project.rentalcar.details'),
         },
 
