@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, Rocket, Sparkles } from "lucide-react"
 import pucMinasLogo from '../../../public/logos/logo-pucminas.png'
-import m2cDigitalLogo from '../../../public/logos/logo-m2cdigital.png'
 import profilePhoto from '../../../public/logos/profile-picture.jpeg'
 import Section from "@/components/layout/section"
 import Reveal from "@/components/layout/reveal"
@@ -67,13 +66,6 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                                 <div className="text-sm text-white/80">
                                     <div className="font-medium">PUC Minas</div>
                                     <div className="text-white/60">{t('hero.puc.course')}</div>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <Image src={m2cDigitalLogo} alt="M2C Digital" width={36} height={36} className="..." />
-                                <div className="text-sm text-white/80">
-                                    <div className="font-medium">M2C Digital</div>
-                                    <div className="text-white/60">{t('hero.m2c.role')}</div>
                                 </div>
                             </div>
                         </div>
