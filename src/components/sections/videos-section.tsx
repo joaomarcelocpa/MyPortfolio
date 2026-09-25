@@ -32,6 +32,12 @@ export default function VideosSection({ sectionRef }: VideosSectionProps) {
             description: t('videos.gnosi.description'),
         },
         {
+            id: "vid-pettrail",
+            title: t('videos.pettrail.title'),
+            youtubeId: "E-rMI1yeSw0",
+            description: t('videos.pettrail.description'),
+        },
+        {
             id: "vid-3",
             title: t('videos.gruposcheilla.title'),
             youtubeId: "NBcOky2k8-U",

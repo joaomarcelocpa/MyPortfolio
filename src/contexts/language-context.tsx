@@ -51,11 +51,11 @@ const translations = {
         'project.easytraining.description': 'Sistema de geração de fichas de treino personalizadas e gratuitas.',
         'project.easytraining.details': 'Aplicação web que promove fichas de academia gratuitas e personalizadas. Desenvolvida com tecnologias web fundamentais (HTML, CSS e JavaScript), oferece uma interface intuitiva para criação de treinos personalizados de acordo com as necessidades de cada usuário.',
 
-        'project.m2c.description': 'Plataforma de controle e gestão de recursos para campanhas de mensagens SMS.',
-        'project.m2c.details': 'Sistema avançado de gestão de campanhas SMS com recursos de controle de recursos, relatórios detalhados e análise de performance. Desenvolvido com tecnologias modernas para garantir escalabilidade e eficiência.',
+        'project.m2c.description': 'Plataforma de disparos massivos de mensagens SMS, RCS e Email, com controle de recursos e monitoramento de campanhas.',
+        'project.m2c.details': 'Plataforma completa para envio em massa de mensagens via SMS, RCS e Email, com gestão de créditos e controle de recursos por cliente, acompanhamento em tempo real do desempenho das campanhas e relatórios detalhados. Desenvolvida com tecnologias modernas para garantir escalabilidade, confiabilidade e alta performance no disparo de mensagens.',
 
-        'project.huni.description': 'Plataforma de revenda e envio de mensagens SMS massivos',
-        'project.huni.details': 'Plataforma robusta para revenda de SMS com recursos de envio em massa, gestão de clientes e relatórios detalhados. Sistema desenvolvido para alta performance e confiabilidade.',
+        'project.pettrail.description': 'App de solicitação de passeios de pet em tempo real.',
+        'project.pettrail.details': 'Aplicativo mobile e web que conecta passeadores de pet e tutores, permitindo a solicitação de passeios com verificação de segurança, geolocalização do percurso em tempo real, chat entre as partes e avaliação dos passeadores após cada passeio.',
 
         'project.parking.description': 'Sistema de gestão de parques de estacionamento e cobrança.',
         'project.parking.details': 'Sistema desktop para gestão completa de estacionamentos, incluindo controle de entrada/saída, cálculo automático de tarifas e relatórios gerenciais. Desenvolvido em Java com interface JavaFX.',
@@ -78,6 +78,8 @@ const translations = {
         'videos.fabiana.description': 'Vídeo de apresentação do projeto Fabiana Móveis, mostrando as funcionalidades principais da aplicação desenvolvida para otimizar as rotas de entrega da empresa.',
         'videos.gnosi.title': 'Vídeo de apresentação - Gnosi',
         'videos.gnosi.description': 'Vídeo de apresentação do projeto Gnosi, mostrando as principais funcionalidades do desenvolvimento do software da plataforma de ensino e cursos online gratuita.',
+        'videos.pettrail.title': 'Vídeo de apresentação - PetTrail',
+        'videos.pettrail.description': 'Vídeo de apresentação do projeto PetTrail, mostrando as principais funcionalidades do aplicativo de solicitação de passeios de pet em tempo real.',
         'videos.gruposcheilla.title': 'Vídeo de apresentação - Grupo Espírita Scheilla',
         'videos.gruposcheilla.description': 'Vídeo de apresentação do projeto Grupo Espírita Scheilla, detalhando as funcionalidades e o impacto do software desenvolvido para a gestão e promoção do centro espírita.',
 
@@ -170,11 +172,11 @@ const translations = {
         'project.easytraining.description': 'Personalized and free workout plan generation system.',
         'project.easytraining.details': 'Web application that provides free and personalized gym workout plans. Developed with fundamental web technologies (HTML, CSS and JavaScript), it offers an intuitive interface for creating customized workouts according to each user\'s needs.',
 
-        'project.m2c.description': 'Control and resource management platform for SMS message campaigns.',
-        'project.m2c.details': 'Advanced SMS campaign management system with resource control features, detailed reports and performance analysis. Developed with modern technologies to ensure scalability and efficiency.',
+        'project.m2c.description': 'Mass messaging platform for SMS, RCS and Email dispatch, with resource control and campaign monitoring.',
+        'project.m2c.details': 'Complete platform for mass sending of SMS, RCS and Email messages, with credit management and per-client resource control, real-time campaign performance monitoring and detailed reports. Developed with modern technologies to ensure scalability, reliability and high performance in message dispatching.',
 
-        'project.huni.description': 'SMS resale and mass messaging platform',
-        'project.huni.details': 'Robust platform for SMS resale with mass sending features, customer management and detailed reports. System developed for high performance and reliability.',
+        'project.pettrail.description': 'Real-time pet walking request app.',
+        'project.pettrail.details': 'Mobile and web application that connects pet walkers and owners, allowing walk requests with security verification, real-time route geolocation, in-app chat between both parties, and walker ratings after each walk.',
 
         'project.parking.description': 'Parking lot management and billing system.',
         'project.parking.details': 'Desktop system for complete parking management, including entry/exit control, automatic fare calculation and management reports. Developed in Java with JavaFX interface.',
@@ -197,6 +199,8 @@ const translations = {
         'videos.fabiana.description': 'Presentation video of the Fabiana Móveis project, showing the main functionalities of the application developed to optimize the company\'s delivery routes.',
         'videos.gnosi.title': 'Presentation video - Gnosi',
         'videos.gnosi.description': 'Presentation video of the Gnosi project, showing the main functionalities of the software development of the free online teaching and courses platform.',
+        'videos.pettrail.title': 'Presentation video - PetTrail',
+        'videos.pettrail.description': 'Presentation video of the PetTrail project, showing the main functionalities of the real-time pet walking request app.',
         'videos.gruposcheilla.title': 'Presentation video - Grupo Espírita Scheilla',
         'videos.gruposcheilla.description': 'Presentation video of the Grupo Espírita Scheilla project, detailing the functionalities and impact of the software developed for the management and promotion of the spiritist center.',
 

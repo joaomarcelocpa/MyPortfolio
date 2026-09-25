@@ -8,7 +8,7 @@ import logoGnosi from "../../../public/projects/logo-gnosi.png"
 import logoFabianaMoveis from "../../../public/projects/logo-fabianam.png"
 import logoM2CPainel from "../../../public/projects/logo-m2c.png"
 import logoXulambs from "../../../public/projects/logo-xulambs.png"
-import logoHuni from "../../../public/projects/logo-huni.png"
+import logoPetTrail from "../../../public/projects/logo-pettrail.png"
 import logoGrupoScheilla from "../../../public/projects/logo-scheilla.png"
 import logoVirtus from "../../../public/projects/logo-virtus.png"
 import logoRentalCar from "../../../public/projects/logo-rentalcar.png"
@@ -49,6 +49,14 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             details: t('project.gnosi.details'),
         },
         {
+            id: "proj-pettrail",
+            title: "PetTrail",
+            description: t('project.pettrail.description'),
+            tags: ["Flutter", "Nest.js", "PostgreSQL", "Amazon AWS", "Firebase", "Google Maps API", "Next.js"],
+            image: logoPetTrail,
+            details: t('project.pettrail.details'),
+        },
+        {
             id: "proj-3",
             title: "Grupo Espírita Scheilla",
             description: t('project.scheilla.description'),
@@ -72,14 +80,6 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
             tags: ["React.js", "Nest.js", "PostgreSQL", "MongoDB", "OpenSearch", "Amazon AWS"],
             image: logoM2CPainel,
             details: t('project.m2c.details'),
-        },
-        {
-            id: "proj-6",
-            title: "Huni BR",
-            description: t('project.huni.description'),
-            tags: ["React.js", "Nest.js", "PostgreSQL", "MongoDB", "OpenSearch", "Amazon AWS"],
-            image: logoHuni,
-            details: t('project.huni.details'),
         },
         {
             id: "proj-7",
